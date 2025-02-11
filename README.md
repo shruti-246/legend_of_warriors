@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <td><img src="./docs_folder/team_lead05/logos/Logo.png" alt="Legend of Warriors Logo" width="150"></td>
+    <td><img src="./docs_folder/team_lead05/logos/Logo.png" alt="Legend of Warriors Logo" width="700"></td>
     <td>
       <p>
         <strong>Legend of Warriors</strong> is an exciting 2D combat-adventure game where players 

@@ -25,6 +25,8 @@
 
 [RFP Resources](https://webpages.uidaho.edu/drbc/cs383/assignments/RFP.html)
 
+[Rough Presentation Walkthrough](https://webpages.uidaho.edu/drbc/cs383/assignments/04b_PresentationStoreyboard.pdf)
+
 [SA Presentation resources](https://webpages.uidaho.edu/drbc/cs383/assignments/04b_PresentationMarkingKey.pdf)
 
 [StoryBoard Marking Key](https://webpages.uidaho.edu/drbc/cs383/assignments/04b_StoryboardMarkingKey.pdf)

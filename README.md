@@ -20,6 +20,10 @@
 
 [RFP](/docs_folder/Final_RFP_EverestElites.pdf)
 
+SA Presentaation Slides [(pdf)](/docs_folder/EverestElites_SA_Presentation.pdf)
+
+Storyboard [(pdf)](/docs_folder/EverestElites_Storyboard.pdf)
+
 # CS383 class references
 [Champion Document Resources](https://webpages.uidaho.edu/drbc/cs383/assignments/Champion.html)
 

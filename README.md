@@ -14,15 +14,23 @@
   </tr>
 </table>
 
+# Our Game Video
+Visual credit:- Shadow Fight 2
+<div style="text-align: center;">
+  <video width="640" height="360" controls>
+    <source src="./docs_folder/CS383_game_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
 
 # Everest Elites Reference
 [Coding Standard](https://docs.google.com/document/d/1LwN1IsNJDbrkG7CQ_4cYRDVANrr4LlzVHY6VeJ2mtiI/edit?usp=sharing)
 
 [RFP](/docs_folder/Final_RFP_EverestElites.pdf)
 
-SA Presentaation Slides [(pdf)](/docs_folder/EverestElites_SA_Presentation.pdf)
 
-Storyboard [(pdf)](/docs_folder/EverestElites_Storyboard.pdf)
 
 # CS383 class references
 [Champion Document Resources](https://webpages.uidaho.edu/drbc/cs383/assignments/Champion.html)

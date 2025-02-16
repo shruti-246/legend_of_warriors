@@ -16,13 +16,12 @@
 
 # Our Game Video
 Visual credit:- Shadow Fight 2
-<div style="text-align: center;">
-  <video width="640" height="360" controls>
-    <source src="./docs_folder/CS383_game_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
 
+<div align="center">
+  <a href="docs_folder/CS383_game_video.mp4">
+    <img src="docs_folder/game_video_thumbnail.png" alt="Watch the Video" width="600">
+  </a>
+</div>
 
 
 # Everest Elites Reference

@@ -25,7 +25,7 @@ Visual credit:- Shadow Fight 2
 
 
 # Everest Elites Reference
-[Coding Standard](https://docs.google.com/document/d/1LwN1IsNJDbrkG7CQ_4cYRDVANrr4LlzVHY6VeJ2mtiI/edit?usp=sharing)
+[Coding Standard](https://leotgo.github.io/unity-coding-standards/#code-formatting)
 
 [RFP](/docs_folder/Final_RFP_EverestElites.pdf)
 

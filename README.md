@@ -14,11 +14,22 @@
   </tr>
 </table>
 
+# Our Game Video
+Visual credit:- Shadow Fight 2
+
+<div align="center">
+  <a href="docs_folder/CS383_game_video.mp4">
+    <img src="docs_folder/game_video_thumbnail.png" alt="Watch the Video" width="600">
+  </a>
+</div>
+
 
 # Everest Elites Reference
-[Coding Standard](https://docs.google.com/document/d/1LwN1IsNJDbrkG7CQ_4cYRDVANrr4LlzVHY6VeJ2mtiI/edit?usp=sharing)
+[Coding Standard](https://leotgo.github.io/unity-coding-standards/#code-formatting)
 
 [RFP](/docs_folder/Final_RFP_EverestElites.pdf)
+
+
 
 # CS383 class references
 [Champion Document Resources](https://webpages.uidaho.edu/drbc/cs383/assignments/Champion.html)

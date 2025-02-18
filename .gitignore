@@ -34,7 +34,13 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
-build/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uilds/
+[Bb]uild/
+[Ll]ogs/
+[Mm]emoryCaptures/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -312,3 +318,17 @@ upm-ci~/
 test-results/
 .download
 .bin
+
+# macOS-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+*.app/
+*.app.dSYM/
+*.ipa
+
+
+# macOS Finder settings
+._*
+.Spotlight-V100
+.Trashes

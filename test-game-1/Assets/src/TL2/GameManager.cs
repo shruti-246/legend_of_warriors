@@ -18,6 +18,27 @@ public class gameManager : MonoBehaviour {
         }
     }
 
+    private void Start()
+    {
+        if(SceneManager.GetActiveScene().name == "logo-scene"){
+            StartCoroutine(LoadNextSceneAfterDelay(5f));
+        }
+    }
+
+    private void Update()
+    {
+        // if the user presses the escape key, quit the game
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            LoadScene("game-lobby");
+        }
+    }
+
+    private System.Collections.IEnumerator LoadNextSceneAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        LoadScene("video-scene");
+    }
+
     // method to load scene
     public void LoadScene(string sceneName){
         SceneManager.LoadScene(sceneName);

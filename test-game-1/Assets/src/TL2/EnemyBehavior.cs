@@ -2,13 +2,10 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    public float speed = 3f;
-    public float attackRange = 1.5f;
-    public float defendRange = 2.5f;
-    public float collectRange = 5f;
-    public int attackDamage = 10;
-    public float attackCooldown = 1.5f;
-
+    public float speed = 10f;               // Movement speed toward the player
+    public float attackRange = 1.5f;       // Distance at which the enemy will attack
+    public int attackDamage = 10;          // Damage inflicted on attack
+    public float attackCooldown = 3f;    // Time delay between attacks
     private Transform player;
     private Animator animator;
     private float lastAttackTime;
@@ -23,73 +20,37 @@ public class EnemyBehavior : MonoBehaviour
     {
         if (player == null) return;
 
-        // GameObject collectible = FindClosestCollectible();
-        GameObject collectible = null;
+        float distance = Vector2.Distance(transform.position, player.position);
 
-        if (collectible != null)
+        if (distance <= attackRange)
         {
-            MoveTowards(collectible.transform.position);
-            animator.SetBool("isWalking", true);
+            AttackPlayer();
         }
         else
         {
-            float distance = Vector2.Distance(transform.position, player.position);
-
-            if (distance <= attackRange)
-            {
-                AttackPlayer();
-            }
-            else if (distance <= defendRange)
-            {
-                Defend();
-            }
-            else
-            {
-                MoveTowards(player.position);
-                animator.SetBool("isWalking", true);
-            }
+            MoveTowardsPlayer();
         }
     }
 
-    void MoveTowards(Vector2 targetPosition)
+    void MoveTowardsPlayer()
     {
-        Vector2 direction = (targetPosition - (Vector2)transform.position).normalized;
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        // Calculate direction toward the player
+        Vector2 direction = (player.position - transform.position).normalized;
+        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+
+        // Set running animation
         animator.SetBool("isWalking", true);
     }
 
     void AttackPlayer()
     {
         animator.SetBool("isWalking", false);
+
+        // Attack only after cooldown
         if (Time.time - lastAttackTime >= attackCooldown)
         {
             animator.SetTrigger("Attack");
-            // player.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
-            // lastAttackTime = Time.time;
+            lastAttackTime = Time.time;
         }
     }
-
-    void Defend()
-    {
-        animator.SetBool("isWalking", false);
-        animator.SetTrigger("Defend");
-    }
-
-    // GameObject FindClosestCollectible()
-    // {
-    //     GameObject[] collectibles = GameObject.FindGameObjectsWithTag("Collectible");
-    //     GameObject closest = null;
-    //     float shortestDistance = Mathf.Infinity;
-
-    //     foreach (GameObject item in collectibles)
-    //     {
-    //         float distance = Vector2.Distance(transform.position, item.transform.position);
-    //         if (distance < shortestDistance && distance <= collectRange)
-    //         {
-    //             shortestDistance = distance;
-    //             closest = item;
-    //         }
-    //     }
-    //     return closest;
-    // }
 }

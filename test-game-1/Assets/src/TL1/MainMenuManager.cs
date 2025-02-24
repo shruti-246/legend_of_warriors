@@ -10,7 +10,7 @@ public class MainMenuManager : MonoBehaviour
     // Function to start the game
     public void PlayGame()
     {
-        SceneManager.LoadScene("main-game-scene"); // Replace with your actual game scene name
+        SceneManager.LoadScene("main-game-scene"); 
     }
 
     // Function to quit the game
@@ -32,7 +32,6 @@ public class MainMenuManager : MonoBehaviour
     public void OpenShop()
     {
         Debug.Log("Shop Opened");
-        // Add code to open shop UI
     }
 
     // Function to toggle the Help Panel

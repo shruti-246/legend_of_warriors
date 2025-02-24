@@ -11,6 +11,7 @@ TagManager:
   - GameVideo
   - Skip
   - Ground
+  - Collectible
   layers:
   - Default
   - TransparentFX

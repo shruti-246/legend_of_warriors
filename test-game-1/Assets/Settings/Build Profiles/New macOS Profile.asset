@@ -20,12 +20,12 @@ MonoBehaviour:
     rid: 6287663323331166288
   m_OverrideGlobalSceneList: 1
   m_Scenes:
-  - m_enabled: 0
-    m_path: Assets/Scenes/main-game-scene.unity
-  - m_enabled: 0
-    m_path: Assets/Scenes/video-scene.unity
   - m_enabled: 1
     m_path: Assets/Scenes/logo-scene.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/video-scene.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/main-game-scene.unity
   m_ScriptingDefines:
   - 
   m_PlayerSettingsYaml:

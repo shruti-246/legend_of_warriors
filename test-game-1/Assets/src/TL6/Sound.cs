@@ -11,9 +11,5 @@ public class Sound : MonoBehaviour
         {
             audioSource.Play();
         }
-        else
-        {
-            Debug.LogError("AudioSource is not assigned!");
-        }
     }
 }

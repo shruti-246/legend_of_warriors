@@ -66,6 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/src/TL2/EnemyMovement.cs" />
+    <Compile Include="Assets/src/TL6/Sound.cs" />
+    <Compile Include="Assets/src/TL2/EnemyBehavior.cs" />
+    <Compile Include="Assets/src/TL2/raun9583/PlayerControl.cs" />
     <Compile Include="Assets/src/TL2/GameManager.cs" />
     <Compile Include="Assets/src/TL6/LogoBrightness.cs" />
     <Compile Include="Assets/src/TL6/VideoController.cs" />

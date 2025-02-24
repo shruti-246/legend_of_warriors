@@ -1,14 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;  // Use this for Unity UI elements (Slider, Dropdown)
-using TMPro;  // This is for TextMeshPro (in case you're using TMP_Dropdown)
+using TMPro;  
 
 public class SetManager : MonoBehaviour
 {
     public GameObject settingsPanel;
     public Slider volumeSlider;
-
-    // Change to TMP_Dropdown if you're using TextMesh Pro (for Dropdown UI)
-    public TMP_Dropdown graphicsDropdown;  // Use TMP_Dropdown for compatibility
+    public TMP_Dropdown graphicsDropdown;  
     //public Toggle fullscreenToggle;
 
     void Start()

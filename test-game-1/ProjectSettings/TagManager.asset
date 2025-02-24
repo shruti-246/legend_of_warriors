@@ -11,6 +11,7 @@ TagManager:
   - GameVideo
   - Skip
   - Ground
+  - Collectible
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - 
   - 

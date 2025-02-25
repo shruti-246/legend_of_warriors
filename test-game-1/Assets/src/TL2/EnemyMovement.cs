@@ -13,7 +13,7 @@ public class EnemyMovement : MonoBehaviour
     public LayerMask groundLayer; // Layer assigned to ground objects
 
     private Rigidbody2D rb; // Rigidbody2D reference
-    private bool isGrounded = false; // Flag to check if grounded
+    private bool isGrounded = false; // Flag to check if groundedd
 
     void Start()
     {

@@ -29,6 +29,8 @@ Visual credit:- Shadow Fight 2
 
 [RFP](/docs_folder/Final_RFP_EverestElites.pdf)
 
+[Master Gantt Chart](https://vandalsuidaho-my.sharepoint.com/:x:/g/personal/silw8620_vandals_uidaho_edu/Ebulw72xfrlIqKYk6j9vrmEBbdtVfm9tlNtpQz4Sr3_jxA?e=gZ05st)
+
 
 
 # CS383 class references

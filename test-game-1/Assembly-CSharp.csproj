@@ -65,25 +65,16 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.34f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Assets\src\TL2\EnemyMovement.cs" />
     <Compile Include="Assets\src\TL6\Sound.cs" />
     <Compile Include="Assets\src\TL1\SceneManagerScript.cs" />
     <Compile Include="Assets\src\TL2\EnemyBehavior.cs" />
+    <Compile Include="Assets\src\TL2\raun9583\PlayerControl.cs" />
     <Compile Include="Assets\src\TL1\SetManager.cs" />
     <Compile Include="Assets\src\TL2\GameManager.cs" />
     <Compile Include="Assets\src\TL1\MainMenuManager.cs" />
     <Compile Include="Assets\src\TL6\LogoBrightness.cs" />
     <Compile Include="Assets\src\TL6\VideoController.cs" />
-=======
-    <Compile Include="Assets/src/TL2/EnemyMovement.cs" />
-    <Compile Include="Assets/src/TL6/Sound.cs" />
-    <Compile Include="Assets/src/TL2/EnemyBehavior.cs" />
-    <Compile Include="Assets/src/TL2/raun9583/PlayerControl.cs" />
-    <Compile Include="Assets/src/TL2/GameManager.cs" />
-    <Compile Include="Assets/src/TL6/LogoBrightness.cs" />
-    <Compile Include="Assets/src/TL6/VideoController.cs" />
->>>>>>> 0cd0b3aa25570eda43d2b86302d0745109dae6c0
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

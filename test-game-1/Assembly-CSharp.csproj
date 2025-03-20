@@ -70,6 +70,7 @@
     <Compile Include="Assets/src/TL6/Sound.cs" />
     <Compile Include="Assets/src/TL1/SceneManagerScript.cs" />
     <Compile Include="Assets/src/TL2/EnemyBehavior.cs" />
+    <Compile Include="Assets/tst/TL2/david_test1.cs" />
     <Compile Include="Assets/src/TL2/raun9583/PlayerControl.cs" />
     <Compile Include="Assets/src/TL1/SetManager.cs" />
     <Compile Include="Assets/src/TL2/raun9583/PlayerMovement.cs" />
@@ -1166,12 +1167,12 @@
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Aseprite.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.2D.Aseprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Editor">

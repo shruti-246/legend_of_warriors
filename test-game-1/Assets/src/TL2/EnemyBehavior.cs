@@ -9,6 +9,7 @@ public class EnemyBehavior : MonoBehaviour
     private Transform player;
     private Animator animator;
     private float lastAttackTime;
+    private bool facingRight = false;
 
     void Start()
     {
@@ -30,12 +31,13 @@ public class EnemyBehavior : MonoBehaviour
         {
             MoveTowardsPlayer();
         }
+        FlipTowardsPlayer();
     }
 
     void MoveTowardsPlayer()
     {
         // Calculate direction toward the player
-        Vector2 direction = (player.position - transform.position).normalized;
+        Vector2 targetPosition = new Vector2(player.position.x, transform.position.y);
         transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
 
         // Set running animation
@@ -51,6 +53,17 @@ public class EnemyBehavior : MonoBehaviour
         {
             animator.SetTrigger("Attack");
             lastAttackTime = Time.time;
+        }
+    }
+
+    void FlipTowardsPlayer()
+    {
+        if((player.position.x < transform.position.x && facingRight) || (player.position.x > transform.position.x && !facingRight))
+        {
+            facingRight = !facingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1;
+            transform.localScale = localScale;
         }
     }
 }

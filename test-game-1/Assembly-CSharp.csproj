@@ -65,6 +65,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.34f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\src\TL2\EnemyMovement.cs" />
     <Compile Include="Assets\src\TL2\raun9583\CameraFollow.cs" />
     <Compile Include="Assets\src\TL6\Sound.cs" />
@@ -79,6 +80,21 @@
     <Compile Include="Assets\src\TL6\LogoBrightness.cs" />
     <Compile Include="Assets\tst\TL1\settings_tests.cs" />
     <Compile Include="Assets\src\TL6\VideoController.cs" />
+=======
+    <Compile Include="Assets/src/TL2/EnemyMovement.cs" />
+    <Compile Include="Assets/src/TL2/raun9583/CameraFollow.cs" />
+    <Compile Include="Assets/src/TL6/Sound.cs" />
+    <Compile Include="Assets/src/TL1/SceneManagerScript.cs" />
+    <Compile Include="Assets/src/TL2/EnemyBehavior.cs" />
+    <Compile Include="Assets/tst/TL2/david_test1.cs" />
+    <Compile Include="Assets/src/TL2/raun9583/PlayerControl.cs" />
+    <Compile Include="Assets/src/TL1/SetManager.cs" />
+    <Compile Include="Assets/src/TL2/raun9583/PlayerMovement.cs" />
+    <Compile Include="Assets/src/TL2/GameManager.cs" />
+    <Compile Include="Assets/src/TL1/MainMenuManager.cs" />
+    <Compile Include="Assets/src/TL6/LogoBrightness.cs" />
+    <Compile Include="Assets/src/TL6/VideoController.cs" />
+>>>>>>> 696445c35a2ee8ed57a54a2857b72199af634221
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -1164,12 +1180,19 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+=======
+>>>>>>> 696445c35a2ee8ed57a54a2857b72199af634221
     <Reference Include="Unity.2D.Aseprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Editor">

@@ -1,0 +1,6 @@
+{
+    "name": "tst",
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
+}

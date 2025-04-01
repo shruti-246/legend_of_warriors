@@ -1,66 +1,83 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuManager : MonoBehaviour
+public class MainMenuManager : Menu  // Inherits from a base Menu class
 {
-    public GameObject helpPanel;  // Assign this in Inspector
-    public GameObject settingsPanel;  // Assign this in Inspector
-    public GameObject MainMenu;  // Assign this in Inspector
+    public GameObject helpPanel;
+    public GameObject settingsPanel;
+    public GameObject mainMenuPanel;
+    public GameObject achievementsPanel;
 
-    // Function to start the game
-    public void PlayGame()
+    // Dynamic binding via override
+    public override void OpenMenu()
     {
-        SceneManager.LoadScene("main-game-scene"); 
+        mainMenuPanel.SetActive(true);
+        Debug.Log("Main menu opened.");
     }
 
-    // Function to quit the game
-    public void QuitGame()
+    public override void CloseMenu()
+    {
+        mainMenuPanel.SetActive(false);
+        Debug.Log("Main menu closed.");
+    }
+
+    public virtual void OpenPlay()
+    {
+        Debug.Log("Opening game scene...");
+        SceneManager.LoadScene("main-game-scene");
+    }
+
+    public virtual void OpenShop()
+    {
+        Debug.Log("Shop opened.");
+        // Can add: SceneManager.LoadScene("Shop", LoadSceneMode.Additive);
+    }
+
+    public virtual void QuitGame()
     {
         Debug.Log("Quit Game");
-        Application.Quit(); // Quits the game (only works in a built application)
+        Application.Quit();
     }
 
-    // Function to open settings
-    public void OpenSettings()
+    public virtual void OpenSettings()
     {
-        // Deactivate the main menu and activate the settings panel
-        MainMenu.SetActive(false);
+        mainMenuPanel.SetActive(false);
         settingsPanel.SetActive(true);
+        Debug.Log("Settings opened.");
     }
 
-    // Function to open the shop
-    public void OpenShop()
-    {
-        Debug.Log("Shop Opened");
-    }
-
-    // Function to toggle the Help Panel
-    public void ToggleHelp()
+    public virtual void ToggleHelp()
     {
         if (helpPanel != null)
         {
             helpPanel.SetActive(!helpPanel.activeSelf);
+            Debug.Log("Toggled help panel.");
         }
         else
         {
-            Debug.LogWarning("Help Panel is not assigned in the Inspector.");
+            Debug.LogWarning("Help Panel not assigned.");
         }
     }
-
-    // Function to handle the back button from Help or Settings
-    public void OnBackButtonClicked()
+    public void OpenAchievements()
     {
-        // Check which panel is active and deactivate it
-        if (helpPanel.activeSelf)
-        {
-            helpPanel.SetActive(false);
-        }
-        else if (settingsPanel.activeSelf)
-        {
-            settingsPanel.SetActive(false);
-        }
+        mainMenuPanel.SetActive(false);
+        achievementsPanel.SetActive(true);
+    }
 
-        // Activate the main menu again
-        MainMenu.SetActive(true);
+    public void CloseAchievements()
+    {
+        achievementsPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
+    }
+    public virtual void BackToMainMenu()
+    {
+        if (helpPanel != null && helpPanel.activeSelf)
+            helpPanel.SetActive(false);
+
+        if (settingsPanel != null && settingsPanel.activeSelf)
+            settingsPanel.SetActive(false);
+
+        mainMenuPanel.SetActive(true);
+        Debug.Log("Returned to main menu.");
     }
 }

@@ -1,34 +1,52 @@
 using UnityEngine;
-using UnityEngine.UI;  // Use this for Unity UI elements (Slider, Dropdown)
-using TMPro;  
+using UnityEngine.UI;  // For UI elements (Slider, Dropdown, Toggle)
+using TMPro;
 
 public class SetManager : MonoBehaviour
 {
     public GameObject settingsPanel;
     public Slider volumeSlider;
-    public TMP_Dropdown graphicsDropdown;  
-    //public Toggle fullscreenToggle;
+    public TMP_Dropdown graphicsDropdown;
+
+    public Toggle fullscreenToggle;  // NEW
+    public Toggle muteToggle;        // NEW
 
     void Start()
-    {
-        // Safety check for missing UI elements
+    {   
+        #if UNITY_EDITOR
+        PlayerPrefs.DeleteAll();
+        #endif
+        // Safety checks
         if (volumeSlider == null)
-            Debug.LogError("Volume Slider is not assigned in the Inspector!", this);
-        
-        if (graphicsDropdown == null)
-            Debug.LogError("Graphics Dropdown is not assigned in the Inspector!", this);
+            Debug.LogError("Volume Slider is not assigned!", this);
 
-        // Load saved settings only if the components are not null
+        if (graphicsDropdown == null)
+            Debug.LogError("Graphics Dropdown is not assigned!", this);
+
+        if (fullscreenToggle == null)
+            Debug.LogWarning("Fullscreen toggle not assigned!", this);
+
+        if (muteToggle == null)
+            Debug.LogWarning("Mute toggle not assigned!", this);
+
+        // Load settings
         if (volumeSlider != null)
             volumeSlider.value = PlayerPrefs.GetFloat("Volume", 5.0f);
-        
+
         if (graphicsDropdown != null)
             graphicsDropdown.value = PlayerPrefs.GetInt("GraphicsQuality", 2);
 
-        // Apply settings
+        if (fullscreenToggle != null)
+            fullscreenToggle.isOn = PlayerPrefs.GetInt("Fullscreen", 1) == 1;
+
+        if (muteToggle != null)
+            muteToggle.isOn = PlayerPrefs.GetInt("Muted", 0) == 1;
+
+        // Apply initial values
         ApplyVolume(volumeSlider.value);
         ApplyGraphicsQuality(graphicsDropdown.value);
-        //ApplyFullscreen(fullscreenToggle.isOn);
+        ApplyFullscreen(fullscreenToggle.isOn);
+        ApplyMute(muteToggle.isOn);
     }
 
     public void OpenSet()
@@ -43,7 +61,7 @@ public class SetManager : MonoBehaviour
 
     public void ApplyVolume(float volume)
     {
-        AudioListener.volume = volume;
+        AudioListener.volume = muteToggle != null && muteToggle.isOn ? 0f : volume;
         PlayerPrefs.SetFloat("Volume", volume);
     }
 
@@ -53,24 +71,35 @@ public class SetManager : MonoBehaviour
         PlayerPrefs.SetInt("GraphicsQuality", qualityIndex);
     }
 
-    // public void ApplyFullscreen(bool isFullscreen)
-    // {
-    //     Screen.fullScreen = isFullscreen;
-    //     PlayerPrefs.SetInt("Fullscreen", isFullscreen ? 1 : 0);
-    // }
+    public void ApplyFullscreen(bool isFullscreen)
+    {
+        Screen.fullScreen = isFullscreen;
+        PlayerPrefs.SetInt("Fullscreen", isFullscreen ? 1 : 0);
+    }
+
+    public void ApplyMute(bool isMuted)
+    {
+        AudioListener.volume = isMuted ? 0f : volumeSlider.value;
+        PlayerPrefs.SetInt("Muted", isMuted ? 1 : 0);
+    }
 
     public void ApplySettings()
     {
-        // Apply and save settings
         if (volumeSlider != null)
             PlayerPrefs.SetFloat("Volume", volumeSlider.value);
 
         if (graphicsDropdown != null)
             PlayerPrefs.SetInt("GraphicsQuality", graphicsDropdown.value);
 
-        AudioListener.volume = volumeSlider.value;
+        if (fullscreenToggle != null)
+            PlayerPrefs.SetInt("Fullscreen", fullscreenToggle.isOn ? 1 : 0);
 
-        PlayerPrefs.Save(); // Save settings permanently
+        if (muteToggle != null)
+            PlayerPrefs.SetInt("Muted", muteToggle.isOn ? 1 : 0);
+
+        AudioListener.volume = muteToggle != null && muteToggle.isOn ? 0f : volumeSlider.value;
+
+        PlayerPrefs.Save();
 
         Debug.Log("Settings Applied");
 

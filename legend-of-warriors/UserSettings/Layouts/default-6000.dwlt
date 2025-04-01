@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1280
     height: 629.3334
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 101
+  controlID: 25
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -167,7 +167,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1000.6667
-    height: 328.66666
+    height: 313.33334
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 794
-    height: 328.66666
+    height: 313.33334
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 13}
@@ -218,7 +218,7 @@ MonoBehaviour:
     x: 794
     y: 0
     width: 206.66669
-    height: 328.66666
+    height: 313.33334
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 14}
@@ -236,23 +236,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 328.66666
+    y: 313.33334
     width: 1000.6667
-    height: 244.66666
-  m_MinSize: {x: 101, y: 126}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 16}
+    height: 259.99997
+  m_MinSize: {x: 231, y: 276}
+  m_MaxSize: {x: 10001, y: 10026}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -304,7 +304,7 @@ MonoBehaviour:
     x: 0
     y: 78.66667
     width: 793
-    height: 302.66666
+    height: 296
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -845,9 +845,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 122.890274, y: 50.55033, z: 2.024908}
+    m_Target: {x: 186.88922, y: 192.93738, z: -0.455757}
     speed: 2
-    m_Value: {x: 122.890274, y: 50.55033, z: 2.024908}
+    m_Value: {x: 186.88922, y: 192.93738, z: -0.455757}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -897,9 +897,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 225.63947
+    m_Target: 224.1586
     speed: 2
-    m_Value: 225.63947
+    m_Value: 224.1586
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -952,9 +952,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 24
+    y: 78.66667
     width: 793
-    height: 302.66666
+    height: 287.33334
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -972,7 +972,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 793, y: 281.66666}
+  m_TargetSize: {x: 793, y: 266.33334}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -989,15 +989,15 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -264.33334
     m_HBaseRangeMax: 264.33334
-    m_VBaseRangeMin: -93.888885
-    m_VBaseRangeMax: 93.888885
+    m_VBaseRangeMin: -88.77779
+    m_VBaseRangeMax: 88.77779
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -1009,9 +1009,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 793
-      height: 281.66666
+      height: 266.33334
     m_Scale: {x: 1.5, y: 1.5}
-    m_Translation: {x: 396.5, y: 140.83333}
+    m_Translation: {x: 396.5, y: 133.16667}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1019,12 +1019,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -264.33334
-      y: -93.888885
+      y: -88.77778
       width: 528.6667
-      height: 187.77777
+      height: 177.55556
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1189.5, y: 454}
+  m_LastWindowPixelSize: {x: 1189.5, y: 431}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1052,10 +1052,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 795
-    y: 24
+    x: 794
+    y: 78.66667
     width: 204.66669
-    height: 302.66666
+    height: 287.33334
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1069,10 +1069,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 38.333344}
-      m_SelectedIDs: 
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 6acc0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 34c6ffffaad9ffffcadaffffd4ddffff8edeffff20dfffff6cdfffff7adfffff8edffffff0e2ffffb2e3ffff48e4ffff96e4ffffa8e4ffffc2e4ffff0eecffff2eedffff6af0ffff2cf1ffffc2f1ffff12f2ffff24f2ffff3ef2ffff0cfbffff92b1000026b3000080d2000028d3000026de000070e700009ee7000024e9000080e90000
+      m_ExpandedIDs: f8d8feff22dafeff4cdffeffac02ffffc2afffff0cfbffffdcb2000036b30000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1119,9 +1119,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 407.33334
+    y: 392
     width: 999.6667
-    height: 218.66666
+    height: 233.99997
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1144,7 +1144,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/src/TL1
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1154,16 +1154,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/src/TL1
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\debna\OneDrive\Documents\GitHub\legend_of_warriors\legend-of-warriors
+  m_LastProjectPath: C:\Users\debna\OneDrive\Documents\GitHub\legend_of_warriors-1\legend-of-warriors
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 377.33334}
-    m_SelectedIDs: 50b60000
-    m_LastClickedID: 46672
-    m_ExpandedIDs: 00000000f4b50000f6b50000f8b50000fab50000fcb50000feb5000000b60000
+    scrollPos: {x: 0, y: 301.49966}
+    m_SelectedIDs: 2eb60000
+    m_LastClickedID: 46638
+    m_ExpandedIDs: 00000000c4b500002ab6000032b600003ab60000d6c200003ece000040ce000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1192,7 +1192,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f4b50000f6b50000f8b50000fab50000fcb50000feb5000000b60000
+    m_ExpandedIDs: 00000000c4b50000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1218,10 +1218,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 7ce80000
-    m_LastClickedInstanceID: 59516
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300002eb300000000000030b30000e2b3000088b60000
+    m_ExpandedInstanceIDs: c62300002eb300000000000030b30000e2b3000088b60000e6c20000eab30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1272,9 +1272,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 352.66666
+    y: 406
     width: 999.6667
-    height: 218.66666
+    height: 219.99997
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1307,8 +1307,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1001.6667
-    y: 24
+    x: 1000.6667
+    y: 78.66667
     width: 278.3333
     height: 547.3333
   m_SerializedDataModeController:
@@ -1357,10 +1357,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Test Runner\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1069.5
-    y: 102
-    width: 441.5
-    height: 834
+    x: 1000.6667
+    y: 78.66667
+    width: 278.3333
+    height: 547.3333
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1373,12 +1373,12 @@ MonoBehaviour:
     m_ContainerData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 137
+    ID: 21635
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 557
-    - 186
+    - 357.3333
+    - 119.333336
     relativeSizes:
     - 0.75
     - 0.25
@@ -1388,7 +1388,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 743
+    lastTotalSize: 476.66666
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -1396,7 +1396,7 @@ MonoBehaviour:
     oldMinSizes: 
     oldMaxSizes: 
     oldSplitSize: 0
-  m_TestTypeToolbarIndex: 2
+  m_TestTypeToolbarIndex: 0
   m_TestListGUIs:
   - m_Window: {fileID: 18}
     runProgress:
@@ -1432,7 +1432,7 @@ MonoBehaviour:
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
-    - id: 1008
+    - id: 1000
       uniqueId: '[legend-of-warriors][suite]'
       name: legend-of-warriors
       fullName: legend-of-warriors
@@ -1448,10 +1448,10 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1014
-      uniqueId: '[EditTests][/Users/dristantamac/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll][suite]'
+    - id: 1006
+      uniqueId: '[EditTests][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors-1/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll][suite]'
       name: EditTests.dll
-      fullName: /Users/dristantamac/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll
+      fullName: C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors-1/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll
       resultStatus: 0
       duration: 0
       messages: 
@@ -1462,9 +1462,9 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1008
+      parentId: 1000
       parentUniqueId: '[legend-of-warriors][suite]'
-    - id: 1009
+    - id: 1001
       uniqueId: 'EditTests.dll/[EditTests][Btst_Set][suite]'
       name: Btst_Set
       fullName: Btst_Set
@@ -1478,8 +1478,8 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1014
-      parentUniqueId: '[EditTests][/Users/dristantamac/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll][suite]'
+      parentId: 1006
+      parentUniqueId: '[EditTests][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors-1/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll][suite]'
     - id: 1013
       uniqueId: 'EditTests.dll/Btst_Set/[EditTests][Btst_Set.Btst_HighestGraphicsQuality]'
       name: Btst_HighestGraphicsQuality
@@ -1552,8 +1552,8 @@ MonoBehaviour:
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      m_SelectedIDs: a32b5170
+      m_LastClickedID: 1884367779
       m_ExpandedIDs: a32b5170ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1616,7 +1616,7 @@ MonoBehaviour:
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
-    - id: 1000
+    - id: 1011
       uniqueId: '[legend-of-warriors][suite]'
       name: legend-of-warriors
       fullName: legend-of-warriors
@@ -1632,10 +1632,10 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1007
-      uniqueId: '[tst][/Users/dristantamac/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/tst.dll][suite]'
+    - id: 1015
+      uniqueId: '[tst][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors-1/legend-of-warriors/Library/ScriptAssemblies/tst.dll][suite]'
       name: tst.dll
-      fullName: /Users/dristantamac/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/tst.dll
+      fullName: C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors-1/legend-of-warriors/Library/ScriptAssemblies/tst.dll
       resultStatus: 0
       duration: 0
       messages: 
@@ -1646,59 +1646,9 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1000
+      parentId: 1011
       parentUniqueId: '[legend-of-warriors][suite]'
-    - id: 1004
-      uniqueId: 'tst.dll/[tst][david_test1][suite]'
-      name: david_test1
-      fullName: david_test1
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1007
-      parentUniqueId: '[tst][/Users/dristantamac/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/tst.dll][suite]'
-    - id: 1005
-      uniqueId: 'tst.dll/david_test1/[tst][david_test1.david_test1SimplePasses]'
-      name: david_test1SimplePasses
-      fullName: david_test1.david_test1SimplePasses
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: 'tst.dll/[tst][david_test1][suite]'
-    - id: 1006
-      uniqueId: 'tst.dll/david_test1/[tst][david_test1.david_test1WithEnumeratorPasses]'
-      name: david_test1WithEnumeratorPasses
-      fullName: david_test1.david_test1WithEnumeratorPasses
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: 'tst.dll/[tst][david_test1][suite]'
-    - id: 1001
+    - id: 1012
       uniqueId: 'tst.dll/[tst][SceneStress][suite]'
       name: SceneStress
       fullName: SceneStress
@@ -1712,8 +1662,8 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1007
-      parentUniqueId: '[tst][/Users/dristantamac/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/tst.dll][suite]'
+      parentId: 1015
+      parentUniqueId: '[tst][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors-1/legend-of-warriors/Library/ScriptAssemblies/tst.dll][suite]'
     - id: 1002
       uniqueId: 'tst.dll/SceneStress/[tst][SceneStress.SceneStressSimplePasses]'
       name: SceneStressSimplePasses
@@ -1816,7 +1766,7 @@ MonoBehaviour:
       CurrentStepName: Unlock Reload Assemblies
       CurrentStageName: 
     m_NewResultList:
-    - id: 1000
+    - id: 1011
       uniqueId: '[legend-of-warriors][suite]'
       name: legend-of-warriors
       fullName: legend-of-warriors
@@ -1832,10 +1782,10 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1004
-      uniqueId: '[tst][/Users/dristantamac/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/tst.dll][suite]'
+    - id: 1015
+      uniqueId: '[tst][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors-1/legend-of-warriors/Library/ScriptAssemblies/tst.dll][suite]'
       name: tst.dll
-      fullName: /Users/dristantamac/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/tst.dll
+      fullName: C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors-1/legend-of-warriors/Library/ScriptAssemblies/tst.dll
       resultStatus: 0
       duration: 0
       messages: 
@@ -1846,9 +1796,9 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1000
+      parentId: 1011
       parentUniqueId: '[legend-of-warriors][suite]'
-    - id: 1001
+    - id: 1012
       uniqueId: 'tst.dll/[tst][SceneStress][suite]'
       name: SceneStress
       fullName: SceneStress
@@ -1862,8 +1812,8 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1004
-      parentUniqueId: '[tst][/Users/dristantamac/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/tst.dll][suite]'
+      parentId: 1015
+      parentUniqueId: '[tst][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors-1/legend-of-warriors/Library/ScriptAssemblies/tst.dll][suite]'
     - id: 1002
       uniqueId: 'tst.dll/SceneStress/[tst][SceneStress.SceneStressSimplePasses]'
       name: SceneStressSimplePasses
@@ -1898,13 +1848,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: 'tst.dll/[tst][SceneStress][suite]'
-    m_ResultText: enemyAttackTest (0.006s)
+    m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a00801f3
-      m_LastClickedID: -218036064
-      m_ExpandedIDs: 15c367a5df62600b9fc7d64c5f82876ea32b51703315eb744323ef7bffffff7f
+      m_SelectedIDs: 0cec57ea
+      m_LastClickedID: -363336692
+      m_ExpandedIDs: 15c367a50cec57eadf62600b9fc7d64c5f82876ea32b51703315eb744323ef7bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

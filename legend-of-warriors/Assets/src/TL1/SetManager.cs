@@ -4,32 +4,33 @@ using TMPro;
 
 public class SetManager : MonoBehaviour
 {
+    [Header("Panels")]
     public GameObject settingsPanel;
-    public Slider volumeSlider;
-    public TMP_Dropdown graphicsDropdown;
+    public GameObject mainMenuPanel;
+    public GameObject audioPanel;
+    public GameObject graphicsPanel;
+    public GameObject controlsPanel;
+    public PopupMessage popupMessage;
 
-    public Toggle fullscreenToggle;  // NEW
-    public Toggle muteToggle;        // NEW
+    [Header("Audio Settings")]
+    public Slider volumeSlider;
+    public Toggle muteToggle;
+
+    [Header("Graphics Settings")]
+    public TMP_Dropdown graphicsDropdown;
+    public Toggle fullscreenToggle;
 
     void Start()
-    {   
-        #if UNITY_EDITOR
+    {
+#if UNITY_EDITOR
         PlayerPrefs.DeleteAll();
-        #endif
-        // Safety checks
-        if (volumeSlider == null)
-            Debug.LogError("Volume Slider is not assigned!", this);
+#endif
+        LoadSettings();
+        ApplyInitialSettings();
+    }
 
-        if (graphicsDropdown == null)
-            Debug.LogError("Graphics Dropdown is not assigned!", this);
-
-        if (fullscreenToggle == null)
-            Debug.LogWarning("Fullscreen toggle not assigned!", this);
-
-        if (muteToggle == null)
-            Debug.LogWarning("Mute toggle not assigned!", this);
-
-        // Load settings
+    void LoadSettings()
+    {
         if (volumeSlider != null)
             volumeSlider.value = PlayerPrefs.GetFloat("Volume", 5.0f);
 
@@ -41,8 +42,10 @@ public class SetManager : MonoBehaviour
 
         if (muteToggle != null)
             muteToggle.isOn = PlayerPrefs.GetInt("Muted", 0) == 1;
+    }
 
-        // Apply initial values
+    void ApplyInitialSettings()
+    {
         ApplyVolume(volumeSlider.value);
         ApplyGraphicsQuality(graphicsDropdown.value);
         ApplyFullscreen(fullscreenToggle.isOn);
@@ -59,9 +62,36 @@ public class SetManager : MonoBehaviour
         settingsPanel.SetActive(false);
     }
 
+    public void ShowAudioPanel()
+    {
+        audioPanel.SetActive(true);
+        graphicsPanel.SetActive(false);
+        controlsPanel.SetActive(false);
+    }
+
+    public void ShowGraphicsPanel()
+    {
+        audioPanel.SetActive(false);
+        graphicsPanel.SetActive(true);
+        controlsPanel.SetActive(false);
+    }
+
+    public void ShowControlsPanel()
+    {
+        audioPanel.SetActive(false);
+        graphicsPanel.SetActive(false);
+        controlsPanel.SetActive(true);
+    }
+
+    public void CloseControlsPanel()
+    {
+        controlsPanel.SetActive(false);
+        settingsPanel.SetActive(true);
+    }
+
     public void ApplyVolume(float volume)
     {
-        AudioListener.volume = muteToggle != null && muteToggle.isOn ? 0f : volume;
+        AudioListener.volume = (muteToggle != null && muteToggle.isOn) ? 0f : volume;
         PlayerPrefs.SetFloat("Volume", volume);
     }
 
@@ -83,26 +113,80 @@ public class SetManager : MonoBehaviour
         PlayerPrefs.SetInt("Muted", isMuted ? 1 : 0);
     }
 
+    public void ApplyAudioSettings()
+    {
+        ApplyVolume(volumeSlider.value);
+        ApplyMute(muteToggle.isOn);
+        popupMessage.ShowMessage("Applied audio settings.");
+        Debug.Log("Audio settings applied.");
+        ShowSettingsPanel();
+    }
+
+    public void DiscardAudioSettings()
+    {
+        volumeSlider.value = PlayerPrefs.GetFloat("Volume", 5.0f);
+        muteToggle.isOn = PlayerPrefs.GetInt("Muted", 0) == 1;
+        ApplyMute(muteToggle.isOn);
+        popupMessage.ShowMessage("No Audio Changes applied");
+        Debug.Log("Audio settings discarded.");
+        ShowSettingsPanel();
+    }
+
+    public void ApplyGraphicsSettings()
+    {
+        ApplyGraphicsQuality(graphicsDropdown.value);
+        ApplyFullscreen(fullscreenToggle.isOn);
+        popupMessage.ShowMessage("Applied graphics settings.");
+        Debug.Log("Graphics settings applied.");
+        ShowSettingsPanel();
+    }
+
+    public void DiscardGraphicsSettings()
+    {
+        graphicsDropdown.value = PlayerPrefs.GetInt("GraphicsQuality", 2);
+        fullscreenToggle.isOn = PlayerPrefs.GetInt("Fullscreen", 1) == 1;
+        ApplyFullscreen(fullscreenToggle.isOn);
+        popupMessage.ShowMessage("No Graphics changes applied");
+        Debug.Log("Graphics settings discarded.");
+        ShowSettingsPanel();
+    }
+
     public void ApplySettings()
     {
-        if (volumeSlider != null)
-            PlayerPrefs.SetFloat("Volume", volumeSlider.value);
-
-        if (graphicsDropdown != null)
-            PlayerPrefs.SetInt("GraphicsQuality", graphicsDropdown.value);
-
-        if (fullscreenToggle != null)
-            PlayerPrefs.SetInt("Fullscreen", fullscreenToggle.isOn ? 1 : 0);
-
-        if (muteToggle != null)
-            PlayerPrefs.SetInt("Muted", muteToggle.isOn ? 1 : 0);
-
-        AudioListener.volume = muteToggle != null && muteToggle.isOn ? 0f : volumeSlider.value;
-
+        ApplyVolume(volumeSlider.value);
+        ApplyGraphicsQuality(graphicsDropdown.value);
+        ApplyFullscreen(fullscreenToggle.isOn);
+        ApplyMute(muteToggle.isOn);
+        popupMessage.ShowMessage("All setings applied!");
         PlayerPrefs.Save();
 
-        Debug.Log("Settings Applied");
+        Debug.Log("All settings applied.");
 
-        CloseSet();
+        settingsPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
+    }
+
+    public void DiscardAllSettings()
+    {
+        volumeSlider.value = PlayerPrefs.GetFloat("Volume", 5.0f);
+        graphicsDropdown.value = PlayerPrefs.GetInt("GraphicsQuality", 2);
+        fullscreenToggle.isOn = PlayerPrefs.GetInt("Fullscreen", 1) == 1;
+        muteToggle.isOn = PlayerPrefs.GetInt("Muted", 0) == 1;
+        popupMessage.ShowMessage("All settings discarded.");
+
+        ApplyInitialSettings();
+
+        Debug.Log("All settings discarded.");
+
+        settingsPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
+    }
+
+    private void ShowSettingsPanel()
+    {
+        audioPanel.SetActive(false);
+        graphicsPanel.SetActive(false);
+        controlsPanel.SetActive(false);
+        settingsPanel.SetActive(true);
     }
 }

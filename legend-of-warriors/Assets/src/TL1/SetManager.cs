@@ -19,7 +19,8 @@ public class SetManager : MonoBehaviour
     [Header("Graphics Settings")]
     public TMP_Dropdown graphicsDropdown;
     public Toggle fullscreenToggle;
-
+    private float volume; // exposed via methods only
+    private bool isMuted;
     void Start()
     {
 #if UNITY_EDITOR

@@ -58,24 +58,30 @@ void Start()
         existingPlayer.transform.position = spawnPoint.position;
 }
 
-void CopyAppearanceFromPrefab(GameObject prefab, GameObject target)
-{
-    // 🧼 Hide all existing children (modular visuals)
-    foreach (Transform child in target.transform)
+    void CopyAppearanceFromPrefab(GameObject prefab, GameObject target)
     {
-        child.gameObject.SetActive(false);
+        // 🔍 Get the child of the existing player that holds visuals
+        SpriteRenderer targetSprite = target.GetComponentInChildren<SpriteRenderer>();
+        Animator targetAnimator = target.GetComponentInChildren<Animator>();
+
+        // ✅ Get visuals from the selected prefab
+        SpriteRenderer prefabSprite = prefab.GetComponentInChildren<SpriteRenderer>();
+        Animator prefabAnimator = prefab.GetComponentInChildren<Animator>();
+
+        if (targetSprite != null && prefabSprite != null)
+        {
+            targetSprite.sprite = prefabSprite.sprite;
+            targetSprite.flipX = prefabSprite.flipX;
+        }
+
+        if (targetAnimator != null && prefabAnimator != null)
+        {
+            targetAnimator.runtimeAnimatorController = prefabAnimator.runtimeAnimatorController;
+            targetAnimator.avatar = prefabAnimator.avatar;
+        }
+
+        Debug.Log("✅ Replaced visuals on existing player");
     }
 
-    // ✅ Instantiate the selected prefab as a visual child
-    GameObject newVisual = Instantiate(prefab, target.transform);
-    newVisual.transform.localPosition = Vector3.zero;
-
-    // ✅ Optionally match scale, rotation
-    newVisual.transform.localScale = Vector3.one * 1.0f;
-    newVisual.transform.localPosition = new Vector3(0, 4.0f, 0); // 🎯 Adjust Y only
-    newVisual.transform.localRotation = Quaternion.identity;
-
-    Debug.Log("✅ Replaced player visuals with: " + prefab.name);
-}
 
 }

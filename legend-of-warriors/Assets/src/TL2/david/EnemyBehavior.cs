@@ -3,9 +3,10 @@ using UnityEngine;
 public class EnemyBehavior : MonoBehaviour
 {
     public float speed = 10f;               // Movement speed toward the player
-    public float attackRange = 1.5f;       // Distance at which the enemy will attack
-    public int attackDamage = 10;          // Damage inflicted on attack
-    public float attackCooldown = 3f;    // Time delay between attacks
+    public float attackRange = 1.5f;        // Distance at which the enemy will attack
+    public int attackDamage = 10;           // Damage inflicted on attack
+    public float attackCooldown = 3f;       // Time delay between attacks
+
     private Transform player;
     private Animator animator;
     private float lastAttackTime;
@@ -31,16 +32,15 @@ public class EnemyBehavior : MonoBehaviour
         {
             MoveTowardsPlayer();
         }
+
         FlipTowardsPlayer();
     }
 
     void MoveTowardsPlayer()
     {
-        // Calculate direction toward the player
         Vector2 targetPosition = new Vector2(player.position.x, transform.position.y);
         transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
 
-        // Set running animation
         animator.SetBool("isWalking", true);
     }
 
@@ -48,17 +48,23 @@ public class EnemyBehavior : MonoBehaviour
     {
         animator.SetBool("isWalking", false);
 
-        // Attack only after cooldown
         if (Time.time - lastAttackTime >= attackCooldown)
         {
-            animator.SetTrigger("Attack");
+            // Pick a random attack (1 to 3)
+            int attackIndex = Random.Range(1, 4); // Includes 1, 2, 3
+            animator.SetInteger("AttackType", attackIndex);
+            animator.SetTrigger("DoAttack");
+
             lastAttackTime = Time.time;
+
+            Debug.Log("Enemy attacks with animation #" + attackIndex);
         }
     }
 
     void FlipTowardsPlayer()
     {
-        if((player.position.x < transform.position.x && facingRight) || (player.position.x > transform.position.x && !facingRight))
+        if ((player.position.x < transform.position.x && facingRight) ||
+            (player.position.x > transform.position.x && !facingRight))
         {
             facingRight = !facingRight;
             Vector3 localScale = transform.localScale;

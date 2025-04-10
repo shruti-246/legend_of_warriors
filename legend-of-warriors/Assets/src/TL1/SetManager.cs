@@ -19,13 +19,14 @@ public class SetManager : MonoBehaviour
     [Header("Graphics Settings")]
     public TMP_Dropdown graphicsDropdown;
     public Toggle fullscreenToggle;
-    private float volume; // exposed via methods only
-    private bool isMuted;
+    // Used for dynamic binding (STATIC TYPE = superclass)
+    private SettingValue currentSetting; // Static type = SettingValue
+
     void Start()
     {
-#if UNITY_EDITOR
-        PlayerPrefs.DeleteAll();
-#endif
+        #if UNITY_EDITOR
+            PlayerPrefs.DeleteAll();
+        #endif
         LoadSettings();
         ApplyInitialSettings();
     }
@@ -92,8 +93,8 @@ public class SetManager : MonoBehaviour
 
     public void ApplyVolume(float volume)
     {
-        AudioListener.volume = (muteToggle != null && muteToggle.isOn) ? 0f : volume;
-        PlayerPrefs.SetFloat("Volume", volume);
+        currentSetting = new VolumeSetting(volume); // Dynamic type = VolumeSetting
+        currentSetting.Apply(); // Calls overridden method in VolumeSetting
     }
 
     public void ApplyGraphicsQuality(int qualityIndex)
@@ -158,7 +159,7 @@ public class SetManager : MonoBehaviour
         ApplyGraphicsQuality(graphicsDropdown.value);
         ApplyFullscreen(fullscreenToggle.isOn);
         ApplyMute(muteToggle.isOn);
-        popupMessage.ShowMessage("All setings applied!");
+        popupMessage.ShowMessage("All settings applied!");
         PlayerPrefs.Save();
 
         Debug.Log("All settings applied.");

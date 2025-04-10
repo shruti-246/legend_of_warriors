@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bamboo bridge_0: 3952294806980500208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

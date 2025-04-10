@@ -1,0 +1,23 @@
+# Ignore Unity generated files and user-specific settings
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Oo]bj/
+[Mm]emoryCaptures/
+Logs/
+UserSettings/
+
+# VS Code files
+.vscode
+# Mac OS files
+.DS_Store
+
+# Windows thumbnail cache
+Thumbs.db
+
+# Compiled DLLs
+*.dll
+*.exe
+*.apk
+*.unitypackage

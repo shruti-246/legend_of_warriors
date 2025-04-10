@@ -1,6 +1,29 @@
 {
     "name": "tst",
+<<<<<<< HEAD
     "optionalUnityReferences": [
         "TestAssemblies"
     ]
 }
+=======
+    "rootNamespace": "",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        ""
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
+>>>>>>> d0fd543b6d4f19b1ba477af09b040ccf13217b55

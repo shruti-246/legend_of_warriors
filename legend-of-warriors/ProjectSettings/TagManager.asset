@@ -7,6 +7,10 @@ TagManager:
   - Collectible
   - Ground
   - Enemy
+<<<<<<< HEAD
+=======
+  - collectable-bag
+>>>>>>> d0fd543b6d4f19b1ba477af09b040ccf13217b55
   layers:
   - Default
   - TransparentFX

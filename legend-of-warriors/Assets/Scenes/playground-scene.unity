@@ -9015,6 +9015,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   tilemap: {fileID: 101778822}
+<<<<<<< HEAD
+=======
+  walkableTiles: []
+>>>>>>> d0fd543b6d4f19b1ba477af09b040ccf13217b55
 --- !u!58 &500715056
 CircleCollider2D:
   m_ObjectHideFlags: 0

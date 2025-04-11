@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-using UnityEngine;
-using UnityEngine.Tilemaps;
-
-public class PlayerMovement : MonoBehaviour
-{
-    public float moveSpeed = 1f; // Set a default speed
-    public Tilemap tilemap; // Assign this in the Inspector
-
-    private Vector3Int currentTilePosition;
-=======
 // using UnityEngine;
 // using UnityEngine.Tilemaps;
 // using System.Collections;
@@ -112,46 +101,11 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3Int currentTilePosition;
     private bool isMoving = false;
->>>>>>> d0fd543b6d4f19b1ba477af09b040ccf13217b55
 
     void Start()
     {
         if (tilemap == null)
         {
-<<<<<<< HEAD
-            Debug.LogError("Tilemap is not assigned! Please assign the Tilemap in the Inspector.");
-            return;
-        }
-        // Debug.LogError("tile map is assigned.");
-
-        currentTilePosition = tilemap.WorldToCell(transform.position); // Initialize to the player's starting position
-    }
-
-    void Update()
-{
-    float horizontalInput = Input.GetAxisRaw("Horizontal");
-    float verticalInput = Input.GetAxisRaw("Vertical");
-
-    Debug.Log($"Horizontal Input: {horizontalInput}, Vertical Input: {verticalInput}");
-
-    // Calculate target tile position
-    Vector3Int targetTile = currentTilePosition + new Vector3Int((int)horizontalInput, (int)verticalInput, 0);
-
-    // Check if target tile is valid (not blocked)
-    if (CanMoveToTile(targetTile))
-    {
-        Debug.Log($"Moving to tile: {targetTile}");
-        // Move player to target tile position
-        transform.position = tilemap.GetCellCenterWorld(targetTile);
-        currentTilePosition = targetTile;
-    }
-    else
-    {
-        Debug.Log("Cannot move to that tile.");
-    }
-}
-
-=======
             Debug.LogError("Tilemap not assigned!");
             return;
         }
@@ -220,19 +174,11 @@ public class PlayerMovement : MonoBehaviour
 
         Debug.Log("Arrived at tile: " + currentTilePosition);
     }
->>>>>>> d0fd543b6d4f19b1ba477af09b040ccf13217b55
 
     private bool CanMoveToTile(Vector3Int tilePosition)
     {
         if (tilemap == null) return false;
 
-<<<<<<< HEAD
-        // Check if the tile is walkable (null tiles are considered walkable)
-        TileBase tile = tilemap.GetTile(tilePosition);
-        return tile == null; // Assuming null tiles are walkable
-    }
-}
-=======
         TileBase tile = tilemap.GetTile(tilePosition);
 
         if (tile == null) 
@@ -259,4 +205,3 @@ public class PlayerMovement : MonoBehaviour
 
 
 
->>>>>>> d0fd543b6d4f19b1ba477af09b040ccf13217b55

@@ -1,11 +1,5 @@
 {
     "name": "tst",
-<<<<<<< HEAD
-    "optionalUnityReferences": [
-        "TestAssemblies"
-    ]
-}
-=======
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
@@ -26,4 +20,3 @@
     "versionDefines": [],
     "noEngineReferences": false
 }
->>>>>>> d0fd543b6d4f19b1ba477af09b040ccf13217b55

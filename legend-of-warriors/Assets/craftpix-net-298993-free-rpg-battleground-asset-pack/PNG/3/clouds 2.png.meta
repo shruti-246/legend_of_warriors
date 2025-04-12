@@ -166,6 +166,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -622,7 +648,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clouds 2_0: 5284517259399740243
+      clouds 2_1: -7582226428629847595
+      clouds 2_10: -8678026917876445869
+      clouds 2_11: 1189899292596410085
+      clouds 2_12: -6276713438059269231
+      clouds 2_13: 6179172882255716440
+      clouds 2_14: -4974685957513121193
+      clouds 2_15: -2251128977667962499
+      clouds 2_16: 2556491344523746145
+      clouds 2_17: 1231647465617358607
+      clouds 2_18: 5904230716248070905
+      clouds 2_19: -3692962509721648719
+      clouds 2_2: -4598220539608317282
+      clouds 2_3: -7170159974303376059
+      clouds 2_4: 4749720087201587436
+      clouds 2_5: -1756183597472387789
+      clouds 2_6: -7324275762026721200
+      clouds 2_7: -2110162007014701818
+      clouds 2_8: -7012591033771792284
+      clouds 2_9: -6414629944871243619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-public class LogoBrightness : MonoBehaviour // ✅ Must match file name!
+public class LogoBrightness : MonoBehaviour 
 {
     public Image logoImage;
     public float fadeInDuration = 1f;
@@ -11,6 +11,21 @@ public class LogoBrightness : MonoBehaviour // ✅ Must match file name!
 
     private void Start()
     {
+            if (logoImage == null)
+        {
+            Debug.LogError("❌ logoImage is NULL");
+            return;
+        }
+        else
+        {
+            Debug.Log("✅ logoImage is assigned: " + logoImage.name);
+        }
+
+        if (!logoImage.gameObject.activeInHierarchy)
+        {
+            Debug.LogWarning("⚠️ logoImage GameObject is inactive when Start runs!");
+        }
+
         StartCoroutine(FadeFromCenter());
     }
 

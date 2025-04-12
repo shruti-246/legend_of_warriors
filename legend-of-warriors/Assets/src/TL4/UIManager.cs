@@ -10,6 +10,17 @@ public class UIManager : MonoBehaviour
     public GameObject inventoryPanel;
     public GameObject itemButtonPrefab;
     public Transform itemListContent;
+    public TextMeshProUGUI countdownText;
+    public float countdownDuration = 30f;
+    private float countdownTimer;
+    private bool countdownActive = false;
+
+
+    private void Start()
+    {
+        countdownTimer = countdownDuration;
+        countdownActive = true;
+    }
 
     private void Awake()
     {
@@ -29,6 +40,22 @@ public class UIManager : MonoBehaviour
         if (inventoryPanel.activeSelf && Input.GetKeyDown(KeyCode.Escape))
         {
             inventoryPanel.SetActive(false);
+        }
+        // Countdown logic
+        if (countdownActive)
+        {
+            countdownTimer -= Time.deltaTime;
+
+            if (countdownText != null)
+            {
+                countdownText.text = "Time Left: " + Mathf.CeilToInt(countdownTimer).ToString() + "s";
+            }
+
+            if (countdownTimer <= 0f)
+            {
+                countdownActive = false;
+                LoadMainGameScene();
+            }
         }
     }
 
@@ -82,5 +109,10 @@ public class UIManager : MonoBehaviour
                 Destroy(button);
             });
         }
+    }
+
+    private void LoadMainGameScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("main-game-scene"); // Adjust to match actual scene name
     }
 }

@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+
+
 
 public class EnemyBehavior : MonoBehaviour
 {
     public GameObject winCanvas;
     public float speed = 10f;               // Movement speed toward the player
     public float attackRange = 1.5f;        // Distance at which the enemy will attack
-    public int attackDamage = 10;           // Damage inflicted on attack
+    public int attackDamage = 4;           // Damage inflicted on attack
     public float attackCooldown = 3f;       // Time delay between attacks
 
     private Transform player;
@@ -79,6 +82,20 @@ public class EnemyBehavior : MonoBehaviour
         animator.SetBool("isWalking", true);
     }
 
+    // void AttackPlayer()
+    // {
+    //     animator.SetBool("isWalking", false);
+
+    //     if (Time.time - lastAttackTime >= attackCooldown)
+    //     {
+    //         int attackIndex = Random.Range(1, 4);
+    //         animator.SetInteger("AttackType", attackIndex);
+    //         animator.SetTrigger("DoAttack");
+
+    //         lastAttackTime = Time.time;
+    //     }
+    // }
+
     void AttackPlayer()
     {
         animator.SetBool("isWalking", false);
@@ -89,9 +106,25 @@ public class EnemyBehavior : MonoBehaviour
             animator.SetInteger("AttackType", attackIndex);
             animator.SetTrigger("DoAttack");
 
+            Debug.Log("Enemy is attacking player...");
+
+            // Try getting PlayerStats
+            PlayerStats stats = player.GetComponent<PlayerStats>();
+            if (stats != null)
+            {
+                int damage = attackDamage; // Or add randomness here if you want
+                stats.TakeDamage(damage);
+                Debug.Log($"Enemy attacked Player for {damage} damage!");
+            }
+            else
+            {
+                Debug.LogWarning("PlayerStats component not found on player!");
+            }
+
             lastAttackTime = Time.time;
         }
     }
+
 
     void FlipTowardsPlayer()
     {

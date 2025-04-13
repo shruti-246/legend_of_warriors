@@ -34,7 +34,7 @@ public class EnemyControllerAutoAttack : MonoBehaviour
 
     void Update()
     {
-        if (player == null) return;
+        if (player == null || player.gameObject == null) return;
 
         // Move towards the player
         Vector2 direction = (player.position - transform.position).normalized;
@@ -66,6 +66,7 @@ public class EnemyControllerAutoAttack : MonoBehaviour
     void FixedUpdate()
     {
         if (player == null) return;
+
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
@@ -99,4 +100,11 @@ public class EnemyControllerAutoAttack : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }
+
+    public void SetPlayer(Transform newPlayer)
+    {
+        player = newPlayer;
+    }
+
+
 }

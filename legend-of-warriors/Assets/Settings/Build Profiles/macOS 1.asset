@@ -27,11 +27,9 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/game-lobby.unity
   - m_enabled: 1
-    m_path: Assets/Scenes/main-game-scene.unity
-  - m_enabled: 1
-    m_path: Assets/Scenes/playground-scene.unity
-  - m_enabled: 1
     m_path: Assets/Scenes/Shop.unity
+  - m_enabled: 1
+    m_path: Assets/Scenes/new-playground.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
     m_Settings: []

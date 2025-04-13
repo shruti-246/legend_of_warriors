@@ -38,7 +38,7 @@ public class MainMenuManager : Menu  // Inherits from a base Menu class
     {
         PlayClickSound();
         Debug.Log("Opening game scene...");
-        SceneManager.LoadScene("main-game-scene");
+        SceneManager.LoadScene("new-playground");
     }
 
     public virtual void OpenShop()

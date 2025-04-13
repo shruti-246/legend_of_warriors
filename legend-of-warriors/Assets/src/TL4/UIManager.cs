@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -25,10 +26,16 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        // Close inventory when ESC is pressed
-        if (inventoryPanel.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            inventoryPanel.SetActive(false);
+            if (inventoryPanel.activeSelf)
+            {
+                inventoryPanel.SetActive(false); // Close inventory first
+            }
+            else
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("PreviousSceneName");
+            }
         }
     }
 
@@ -77,7 +84,8 @@ public class UIManager : MonoBehaviour
             }
 
             // Button functionality (remove item)
-            button.GetComponent<Button>().onClick.AddListener(() => {
+            button.GetComponent<Button>().onClick.AddListener(() =>
+            {
                 inventory.RemoveItem(item);
                 Destroy(button);
             });

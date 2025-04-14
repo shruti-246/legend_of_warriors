@@ -15,15 +15,21 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
+
     y: 36
     width: 1470
     height: 920
   m_ShowMode: 4
   m_Title: Console
+    y: 42.666668
+    width: 1280
+    height: 629.3334
+  m_ShowMode: 4
+  m_Title: Project
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -43,11 +49,13 @@ MonoBehaviour:
     y: 0
     width: 255.5
     height: 465
+    width: 244
+    height: 294
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &3
@@ -72,6 +80,8 @@ MonoBehaviour:
     y: 0
     width: 1470
     height: 920
+    width: 1280
+    height: 629.3333
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -95,7 +105,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+
     width: 1470
+
+    width: 1280
     height: 36
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -118,6 +131,8 @@ MonoBehaviour:
     x: 0
     y: 900
     width: 1470
+    y: 609.3333
+    width: 1280
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -146,6 +161,12 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
   controlID: 121
+    width: 1280
+    height: 573.3333
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 114
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -172,6 +193,12 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
   controlID: 122
+    width: 1036.6666
+    height: 573.3333
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 40
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -198,6 +225,12 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
   controlID: 123
+    width: 1036.6666
+    height: 294
+  m_MinSize: {x: 200, y: 50}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 41
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -221,10 +254,18 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 14}
+    x: 244
+    y: 0
+    width: 792.6666
+    height: 294
+  m_MinSize: {x: 202, y: 226}
+  m_MaxSize: {x: 4002, y: 4026}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 13}
   - {fileID: 14}
   - {fileID: 12}
+  - {fileID: 15}
+  - {fileID: 13}
   m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &10
@@ -248,12 +289,19 @@ MonoBehaviour:
     height: 399
   m_MinSize: {x: 101, y: 126}
   m_MaxSize: {x: 4001, y: 4026}
+    y: 294
+    width: 1036.6666
+    height: 279.3333
+  m_MinSize: {x: 231, y: 276}
+  m_MaxSize: {x: 10001, y: 10026}
   m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 16}
   - {fileID: 17}
   m_Selected: 1
   m_LastSelected: 0
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,7 +312,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -274,13 +322,1057 @@ MonoBehaviour:
     width: 382
     height: 864
   m_MinSize: {x: 276, y: 76}
+    x: 1036.6666
+    y: 0
+    width: 243.33337
+    height: 573.3333
+  m_MinSize: {x: 51, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 12}
   m_Panes:
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 19}
+  - {fileID: 12}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 50, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: Test framework for running Edit mode and Play mode tests in Unity.
+      Part of the com.unity.test-framework package.
+    m_TextWithWhitespace: "Test Runner\u200B"
+  m_Pos:
+    serializedVersion: 2
+    x: 1037.6666
+    y: 24
+    width: 242.33337
+    height: 547.3333
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_ContainerData: []
+    m_OverlaysVisible: 1
+  m_Spl:
+    ID: 4160
+    splitterInitialOffset: 0
+    currentActiveSplitter: -1
+    realSizes:
+    - 357.3333
+    - 119.333336
+    relativeSizes:
+    - 0.75
+    - 0.25
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 476.66666
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 0
+  m_TestListGUIs:
+  - m_Window: {fileID: 12}
+    runProgress:
+      RunGuid: 750ddc3d-f7e9-4630-aa42-da7d35570cfe
+      ExecutionSettings:
+        m_TargetPlatform: 0
+        m_HasTargetPlatform: 0
+        filter:
+          testMode: 0
+          testNames: []
+          groupNames: []
+          categoryNames: []
+          assemblyNames: []
+        filters:
+        - testMode: 1
+          testNames:
+          - ControlsPanelNavigationTest
+          - ExtraUIFlowTest.AchievementsPanel_MultipleOpenClose
+          - ExtraUIFlowTest.AchievementsPanel_Open_HidesMainMenu
+          - ExtraUIFlowTest.CloseAchievementsPanel_ShowsMainMenu
+          - ExtraUIFlowTest.HelpPanel_ToggleMultipleTimes
+          - ExtraUIFlowTest.MainMenuPanel_IsActive_AtStart
+          - ExtraUIFlowTest.QuitGame_DoesNotCrash_EditorSafe
+          - ExtraUIFlowTest.ToggleHelpPanel_TogglesState
+          - GraphicsToggleTest
+          - PauseSystemTest.CloseControlsPanel_EnablesPausePanel
+          - PauseSystemTest.ControlsPanel_ClosesSuccessfully
+          - PauseSystemTest.ControlsPanel_OpensSuccessfully
+          - PauseSystemTest.OpenControlsPanel_DisablesPausePanel
+          - PauseSystemTest.PausePanel_ToggleCheck_ActiveThenInactive
+          - PauseSystemTest.PausePanel_ToggleCheck_InactiveThenActive
+          - PauseSystemTest.Resume_WhenPaused_HidesPausePanel
+          - SettingsPanelTest.ActivatingSettingsPanel_EnablesPanel
+          - SettingsPanelTest.DeactivatingAllSubpanels
+          - SettingsPanelTest.GraphicsPanel_BoundaryResolutionCheck
+          - SettingsPanelTest.GraphicsPanel_QualityIndex_TooHigh_ShouldBeInvalid
+          - SettingsPanelTest.GraphicsPanel_QualityIndex_TooLow_ShouldBeInvalid
+          - SettingsPanelTest.OpeningAudioPanel_DisablesOtherPanels
+          - SettingsPanelTest.ToggleControlsPanel_OnlyControlsActive
+          - VolumeSliderTest
+          groupNames: []
+          categoryNames: []
+          assemblyNames: []
+        runSynchronously: 0
+        playerHeartbeatTimeout: 600
+        orderedTestNames: []
+        ignoreTests: []
+        featureFlags:
+          fileCleanUpCheck: 0
+          requiresSplashScreen: 0
+          strictDomainReload: 0
+          disableNestedEnumeratorBugfix: 0
+        randomOrderSeed: 0
+      HasFinished: 1
+      Progress: 0.9999997
+      CurrentStepName: Unlock Reload Assemblies
+      CurrentStageName: 
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[legend-of-warriors][suite]'
+      name: legend-of-warriors
+      fullName: legend-of-warriors
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1040
+      uniqueId: '[EditTests][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll][suite]'
+      name: EditTests.dll
+      fullName: C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1045
+      parentUniqueId: '[legend-of-warriors][suite]'
+    - id: 1024
+      uniqueId: 'EditTests.dll/[EditTests][ControlsPanelNavigationTest][suite]'
+      name: ControlsPanelNavigationTest
+      fullName: ControlsPanelNavigationTest
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1040
+      parentUniqueId: '[EditTests][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll][suite]'
+    - id: 1025
+      uniqueId: 'EditTests.dll/ControlsPanelNavigationTest/[EditTests][ControlsPanelNavigationTest.ControlsPanelTogglesCorrectlyFromPause]'
+      name: ControlsPanelTogglesCorrectlyFromPause
+      fullName: ControlsPanelNavigationTest.ControlsPanelTogglesCorrectlyFromPause
+      resultStatus: 1
+      duration: 0.0161118
+      messages: 
+      output: 'Controls Panel Opened
+
+        Controls Panel Closed
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1024
+      parentUniqueId: 'EditTests.dll/[EditTests][ControlsPanelNavigationTest][suite]'
+    - id: 1001
+      uniqueId: 'EditTests.dll/[EditTests][ExtraUIFlowTest][suite]'
+      name: ExtraUIFlowTest
+      fullName: ExtraUIFlowTest
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1040
+      parentUniqueId: '[EditTests][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll][suite]'
+    - id: 1009
+      uniqueId: 'EditTests.dll/ExtraUIFlowTest/[EditTests][ExtraUIFlowTest.AchievementsPanel_MultipleOpenClose]'
+      name: AchievementsPanel_MultipleOpenClose
+      fullName: ExtraUIFlowTest.AchievementsPanel_MultipleOpenClose
+      resultStatus: 1
+      duration: 0.0029568
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][ExtraUIFlowTest][suite]'
+    - id: 1004
+      uniqueId: 'EditTests.dll/ExtraUIFlowTest/[EditTests][ExtraUIFlowTest.AchievementsPanel_Open_HidesMainMenu]'
+      name: AchievementsPanel_Open_HidesMainMenu
+      fullName: ExtraUIFlowTest.AchievementsPanel_Open_HidesMainMenu
+      resultStatus: 1
+      duration: 0.0002891
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][ExtraUIFlowTest][suite]'
+    - id: 1005
+      uniqueId: 'EditTests.dll/ExtraUIFlowTest/[EditTests][ExtraUIFlowTest.CloseAchievementsPanel_ShowsMainMenu]'
+      name: CloseAchievementsPanel_ShowsMainMenu
+      fullName: ExtraUIFlowTest.CloseAchievementsPanel_ShowsMainMenu
+      resultStatus: 1
+      duration: 0.0001779
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][ExtraUIFlowTest][suite]'
+    - id: 1002
+      uniqueId: 'EditTests.dll/ExtraUIFlowTest/[EditTests][ExtraUIFlowTest.HelpPanel_InitialState_IsInactive]'
+      name: HelpPanel_InitialState_IsInactive
+      fullName: ExtraUIFlowTest.HelpPanel_InitialState_IsInactive
+      resultStatus: 2
+      duration: 0.0056189
+      messages: "  Expected: False\r\n  But was:  True\r\n"
+      output: 
+      stacktrace: 'at ExtraUIFlowTest.HelpPanel_InitialState_IsInactive () [0x00000]
+        in C:\Users\debna\OneDrive\Documents\GitHub\legend_of_warriors\legend-of-warriors\Assets\tst\TL1\TestsCases\EditTests\ExtraUIFlowTest.cs:23
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][ExtraUIFlowTest][suite]'
+    - id: 1007
+      uniqueId: 'EditTests.dll/ExtraUIFlowTest/[EditTests][ExtraUIFlowTest.HelpPanel_ToggleMultipleTimes]'
+      name: HelpPanel_ToggleMultipleTimes
+      fullName: ExtraUIFlowTest.HelpPanel_ToggleMultipleTimes
+      resultStatus: 1
+      duration: 0.0001835
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][ExtraUIFlowTest][suite]'
+    - id: 1008
+      uniqueId: 'EditTests.dll/ExtraUIFlowTest/[EditTests][ExtraUIFlowTest.MainMenuPanel_IsActive_AtStart]'
+      name: MainMenuPanel_IsActive_AtStart
+      fullName: ExtraUIFlowTest.MainMenuPanel_IsActive_AtStart
+      resultStatus: 1
+      duration: 0.0001764
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][ExtraUIFlowTest][suite]'
+    - id: 1006
+      uniqueId: 'EditTests.dll/ExtraUIFlowTest/[EditTests][ExtraUIFlowTest.QuitGame_DoesNotCrash_EditorSafe]'
+      name: QuitGame_DoesNotCrash_EditorSafe
+      fullName: ExtraUIFlowTest.QuitGame_DoesNotCrash_EditorSafe
+      resultStatus: 1
+      duration: 0.0017543
+      messages: 
+      output: 'Quit Game
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][ExtraUIFlowTest][suite]'
+    - id: 1003
+      uniqueId: 'EditTests.dll/ExtraUIFlowTest/[EditTests][ExtraUIFlowTest.ToggleHelpPanel_TogglesState]'
+      name: ToggleHelpPanel_TogglesState
+      fullName: ExtraUIFlowTest.ToggleHelpPanel_TogglesState
+      resultStatus: 1
+      duration: 0.0002205
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][ExtraUIFlowTest][suite]'
+    - id: 1010
+      uniqueId: 'EditTests.dll/[EditTests][GraphicsToggleTest][suite]'
+      name: GraphicsToggleTest
+      fullName: GraphicsToggleTest
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1040
+      parentUniqueId: '[EditTests][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll][suite]'
+    - id: 1003
+      uniqueId: 'EditTests.dll/GraphicsToggleTest/[EditTests][GraphicsToggleTest.GraphicsToggleTest_ComponentCheck]'
+      name: GraphicsToggleTest_ComponentCheck
+      fullName: GraphicsToggleTest.GraphicsToggleTest_ComponentCheck
+      resultStatus: 1
+      duration: 0.0032668
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][GraphicsToggleTest][suite]'
+    - id: 1004
+      uniqueId: 'EditTests.dll/GraphicsToggleTest/[EditTests][GraphicsToggleTest.GraphicsToggleTest_InactiveGameObject]'
+      name: GraphicsToggleTest_InactiveGameObject
+      fullName: GraphicsToggleTest.GraphicsToggleTest_InactiveGameObject
+      resultStatus: 1
+      duration: 0.0002935
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][GraphicsToggleTest][suite]'
+    - id: 1005
+      uniqueId: 'EditTests.dll/GraphicsToggleTest/[EditTests][GraphicsToggleTest.GraphicsToggleTest_PositionBoundaryCheck]'
+      name: GraphicsToggleTest_PositionBoundaryCheck
+      fullName: GraphicsToggleTest.GraphicsToggleTest_PositionBoundaryCheck
+      resultStatus: 1
+      duration: 0.0035466
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][GraphicsToggleTest][suite]'
+    - id: 1002
+      uniqueId: 'EditTests.dll/GraphicsToggleTest/[EditTests][GraphicsToggleTest.GraphicsToggleTest_SimplePasses]'
+      name: GraphicsToggleTest_SimplePasses
+      fullName: GraphicsToggleTest.GraphicsToggleTest_SimplePasses
+      resultStatus: 1
+      duration: 0.0002094
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][GraphicsToggleTest][suite]'
+    - id: 1015
+      uniqueId: 'EditTests.dll/[EditTests][PauseSystemTest][suite]'
+      name: PauseSystemTest
+      fullName: PauseSystemTest
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1040
+      parentUniqueId: '[EditTests][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll][suite]'
+    - id: 1010
+      uniqueId: 'EditTests.dll/PauseSystemTest/[EditTests][PauseSystemTest.CloseControlsPanel_EnablesPausePanel]'
+      name: CloseControlsPanel_EnablesPausePanel
+      fullName: PauseSystemTest.CloseControlsPanel_EnablesPausePanel
+      resultStatus: 1
+      duration: 0.0008449
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][PauseSystemTest][suite]'
+    - id: 1012
+      uniqueId: 'EditTests.dll/PauseSystemTest/[EditTests][PauseSystemTest.ControlsPanel_ClosesSuccessfully]'
+      name: ControlsPanel_ClosesSuccessfully
+      fullName: PauseSystemTest.ControlsPanel_ClosesSuccessfully
+      resultStatus: 1
+      duration: 0.0002377
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][PauseSystemTest][suite]'
+    - id: 1011
+      uniqueId: 'EditTests.dll/PauseSystemTest/[EditTests][PauseSystemTest.ControlsPanel_OpensSuccessfully]'
+      name: ControlsPanel_OpensSuccessfully
+      fullName: PauseSystemTest.ControlsPanel_OpensSuccessfully
+      resultStatus: 1
+      duration: 0.0002478
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][PauseSystemTest][suite]'
+    - id: 1009
+      uniqueId: 'EditTests.dll/PauseSystemTest/[EditTests][PauseSystemTest.OpenControlsPanel_DisablesPausePanel]'
+      name: OpenControlsPanel_DisablesPausePanel
+      fullName: PauseSystemTest.OpenControlsPanel_DisablesPausePanel
+      resultStatus: 1
+      duration: 0.0001867
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][PauseSystemTest][suite]'
+    - id: 1007
+      uniqueId: 'EditTests.dll/PauseSystemTest/[EditTests][PauseSystemTest.PausePanel_InitialState_IsInactive]'
+      name: PausePanel_InitialState_IsInactive
+      fullName: PauseSystemTest.PausePanel_InitialState_IsInactive
+      resultStatus: 2
+      duration: 0.0044306
+      messages: "  Expected: False\r\n  But was:  True\r\n"
+      output: 
+      stacktrace: 'at PauseSystemTest.PausePanel_InitialState_IsInactive () [0x00000]
+        in C:\Users\debna\OneDrive\Documents\GitHub\legend_of_warriors\legend-of-warriors\Assets\tst\TL1\TestsCases\EditTests\PauseSystemTest.cs:19
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][PauseSystemTest][suite]'
+    - id: 1013
+      uniqueId: 'EditTests.dll/PauseSystemTest/[EditTests][PauseSystemTest.PausePanel_ToggleCheck_ActiveThenInactive]'
+      name: PausePanel_ToggleCheck_ActiveThenInactive
+      fullName: PauseSystemTest.PausePanel_ToggleCheck_ActiveThenInactive
+      resultStatus: 1
+      duration: 0.0001735
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][PauseSystemTest][suite]'
+    - id: 1014
+      uniqueId: 'EditTests.dll/PauseSystemTest/[EditTests][PauseSystemTest.PausePanel_ToggleCheck_InactiveThenActive]'
+      name: PausePanel_ToggleCheck_InactiveThenActive
+      fullName: PauseSystemTest.PausePanel_ToggleCheck_InactiveThenActive
+      resultStatus: 1
+      duration: 0.0001553
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][PauseSystemTest][suite]'
+    - id: 1008
+      uniqueId: 'EditTests.dll/PauseSystemTest/[EditTests][PauseSystemTest.Resume_WhenPaused_HidesPausePanel]'
+      name: Resume_WhenPaused_HidesPausePanel
+      fullName: PauseSystemTest.Resume_WhenPaused_HidesPausePanel
+      resultStatus: 1
+      duration: 0.0001416
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][PauseSystemTest][suite]'
+    - id: 1026
+      uniqueId: 'EditTests.dll/[EditTests][SettingsPanelTest][suite]'
+      name: SettingsPanelTest
+      fullName: SettingsPanelTest
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1040
+      parentUniqueId: '[EditTests][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll][suite]'
+    - id: 1008
+      uniqueId: 'EditTests.dll/SettingsPanelTest/[EditTests][SettingsPanelTest.ActivatingSettingsPanel_EnablesPanel]'
+      name: ActivatingSettingsPanel_EnablesPanel
+      fullName: SettingsPanelTest.ActivatingSettingsPanel_EnablesPanel
+      resultStatus: 1
+      duration: 0.0007152
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][SettingsPanelTest][suite]'
+    - id: 1012
+      uniqueId: 'EditTests.dll/SettingsPanelTest/[EditTests][SettingsPanelTest.DeactivatingAllSubpanels]'
+      name: DeactivatingAllSubpanels
+      fullName: SettingsPanelTest.DeactivatingAllSubpanels
+      resultStatus: 1
+      duration: 0.0002002
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][SettingsPanelTest][suite]'
+    - id: 1010
+      uniqueId: 'EditTests.dll/SettingsPanelTest/[EditTests][SettingsPanelTest.GraphicsPanel_BoundaryResolutionCheck]'
+      name: GraphicsPanel_BoundaryResolutionCheck
+      fullName: SettingsPanelTest.GraphicsPanel_BoundaryResolutionCheck
+      resultStatus: 1
+      duration: 0.0012179
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][SettingsPanelTest][suite]'
+    - id: 1014
+      uniqueId: 'EditTests.dll/SettingsPanelTest/[EditTests][SettingsPanelTest.GraphicsPanel_QualityIndex_TooHigh_ShouldBeInvalid]'
+      name: GraphicsPanel_QualityIndex_TooHigh_ShouldBeInvalid
+      fullName: SettingsPanelTest.GraphicsPanel_QualityIndex_TooHigh_ShouldBeInvalid
+      resultStatus: 1
+      duration: 0.0002955
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][SettingsPanelTest][suite]'
+    - id: 1013
+      uniqueId: 'EditTests.dll/SettingsPanelTest/[EditTests][SettingsPanelTest.GraphicsPanel_QualityIndex_TooLow_ShouldBeInvalid]'
+      name: GraphicsPanel_QualityIndex_TooLow_ShouldBeInvalid
+      fullName: SettingsPanelTest.GraphicsPanel_QualityIndex_TooLow_ShouldBeInvalid
+      resultStatus: 1
+      duration: 0.0002516
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][SettingsPanelTest][suite]'
+    - id: 1009
+      uniqueId: 'EditTests.dll/SettingsPanelTest/[EditTests][SettingsPanelTest.OpeningAudioPanel_DisablesOtherPanels]'
+      name: OpeningAudioPanel_DisablesOtherPanels
+      fullName: SettingsPanelTest.OpeningAudioPanel_DisablesOtherPanels
+      resultStatus: 1
+      duration: 0.0002103
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][SettingsPanelTest][suite]'
+    - id: 1007
+      uniqueId: 'EditTests.dll/SettingsPanelTest/[EditTests][SettingsPanelTest.SettingsPanel_IsInitiallyInactive]'
+      name: SettingsPanel_IsInitiallyInactive
+      fullName: SettingsPanelTest.SettingsPanel_IsInitiallyInactive
+      resultStatus: 2
+      duration: 0.0003117
+      messages: "  Expected: False\r\n  But was:  True\r\n"
+      output: 
+      stacktrace: 'at SettingsPanelTest.SettingsPanel_IsInitiallyInactive () [0x00000]
+        in C:\Users\debna\OneDrive\Documents\GitHub\legend_of_warriors\legend-of-warriors\Assets\tst\TL1\TestsCases\EditTests\SettingsPanelTest.cs:23
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][SettingsPanelTest][suite]'
+    - id: 1011
+      uniqueId: 'EditTests.dll/SettingsPanelTest/[EditTests][SettingsPanelTest.ToggleControlsPanel_OnlyControlsActive]'
+      name: ToggleControlsPanel_OnlyControlsActive
+      fullName: SettingsPanelTest.ToggleControlsPanel_OnlyControlsActive
+      resultStatus: 1
+      duration: 0.0001779
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: 'EditTests.dll/[EditTests][SettingsPanelTest][suite]'
+    - id: 1035
+      uniqueId: 'EditTests.dll/[EditTests][VolumeSliderTest][suite]'
+      name: VolumeSliderTest
+      fullName: VolumeSliderTest
+      resultStatus: 1
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1040
+      parentUniqueId: '[EditTests][C:/Users/debna/OneDrive/Documents/GitHub/legend_of_warriors/legend-of-warriors/Library/ScriptAssemblies/EditTests.dll][suite]'
+    - id: 1003
+      uniqueId: 'EditTests.dll/VolumeSliderTest/[EditTests][VolumeSliderTest.VolumeSliderTest_ComponentCheck]'
+      name: VolumeSliderTest_ComponentCheck
+      fullName: VolumeSliderTest.VolumeSliderTest_ComponentCheck
+      resultStatus: 1
+      duration: 0.0005911
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][VolumeSliderTest][suite]'
+    - id: 1004
+      uniqueId: 'EditTests.dll/VolumeSliderTest/[EditTests][VolumeSliderTest.VolumeSliderTest_InactiveGameObject]'
+      name: VolumeSliderTest_InactiveGameObject
+      fullName: VolumeSliderTest.VolumeSliderTest_InactiveGameObject
+      resultStatus: 1
+      duration: 0.0001631
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][VolumeSliderTest][suite]'
+    - id: 1005
+      uniqueId: 'EditTests.dll/VolumeSliderTest/[EditTests][VolumeSliderTest.VolumeSliderTest_PositionBoundaryCheck]'
+      name: VolumeSliderTest_PositionBoundaryCheck
+      fullName: VolumeSliderTest.VolumeSliderTest_PositionBoundaryCheck
+      resultStatus: 1
+      duration: 0.0002174
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][VolumeSliderTest][suite]'
+    - id: 1002
+      uniqueId: 'EditTests.dll/VolumeSliderTest/[EditTests][VolumeSliderTest.VolumeSliderTest_SimplePasses]'
+      name: VolumeSliderTest_SimplePasses
+      fullName: VolumeSliderTest.VolumeSliderTest_SimplePasses
+      resultStatus: 1
+      duration: 0.000147
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: 'EditTests.dll/[EditTests][VolumeSliderTest][suite]'
+    m_ResultText: EditTests.dll (30 tests) (0.000s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 92dda23e
+      m_LastClickedID: 1050860946
+      m_ExpandedIDs: 92dda23ea32b5170ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_TrimLeadingAndTrailingWhitespace: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 1
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategories: []
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  - m_Window: {fileID: 0}
+    runProgress:
+      RunGuid: 750ddc3d-f7e9-4630-aa42-da7d35570cfe
+      ExecutionSettings:
+        m_TargetPlatform: 0
+        m_HasTargetPlatform: 0
+        filter:
+          testMode: 0
+          testNames: []
+          groupNames: []
+          categoryNames: []
+          assemblyNames: []
+        filters:
+        - testMode: 1
+          testNames:
+          - ControlsPanelNavigationTest
+          - ExtraUIFlowTest.AchievementsPanel_MultipleOpenClose
+          - ExtraUIFlowTest.AchievementsPanel_Open_HidesMainMenu
+          - ExtraUIFlowTest.CloseAchievementsPanel_ShowsMainMenu
+          - ExtraUIFlowTest.HelpPanel_ToggleMultipleTimes
+          - ExtraUIFlowTest.MainMenuPanel_IsActive_AtStart
+          - ExtraUIFlowTest.QuitGame_DoesNotCrash_EditorSafe
+          - ExtraUIFlowTest.ToggleHelpPanel_TogglesState
+          - GraphicsToggleTest
+          - PauseSystemTest.CloseControlsPanel_EnablesPausePanel
+          - PauseSystemTest.ControlsPanel_ClosesSuccessfully
+          - PauseSystemTest.ControlsPanel_OpensSuccessfully
+          - PauseSystemTest.OpenControlsPanel_DisablesPausePanel
+          - PauseSystemTest.PausePanel_ToggleCheck_ActiveThenInactive
+          - PauseSystemTest.PausePanel_ToggleCheck_InactiveThenActive
+          - PauseSystemTest.Resume_WhenPaused_HidesPausePanel
+          - SettingsPanelTest.ActivatingSettingsPanel_EnablesPanel
+          - SettingsPanelTest.DeactivatingAllSubpanels
+          - SettingsPanelTest.GraphicsPanel_BoundaryResolutionCheck
+          - SettingsPanelTest.GraphicsPanel_QualityIndex_TooHigh_ShouldBeInvalid
+          - SettingsPanelTest.GraphicsPanel_QualityIndex_TooLow_ShouldBeInvalid
+          - SettingsPanelTest.OpeningAudioPanel_DisablesOtherPanels
+          - SettingsPanelTest.ToggleControlsPanel_OnlyControlsActive
+          - VolumeSliderTest
+          groupNames: []
+          categoryNames: []
+          assemblyNames: []
+        runSynchronously: 0
+        playerHeartbeatTimeout: 600
+        orderedTestNames: []
+        ignoreTests: []
+        featureFlags:
+          fileCleanUpCheck: 0
+          requiresSplashScreen: 0
+          strictDomainReload: 0
+          disableNestedEnumeratorBugfix: 0
+        randomOrderSeed: 0
+      HasFinished: 1
+      Progress: 0.9999997
+      CurrentStepName: Unlock Reload Assemblies
+      CurrentStageName: 
+    m_NewResultList: []
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_TrimLeadingAndTrailingWhitespace: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategories: []
+      availableCategories: []
+    m_SelectedOption: 0
+  - m_Window: {fileID: 0}
+    runProgress:
+      RunGuid: 750ddc3d-f7e9-4630-aa42-da7d35570cfe
+      ExecutionSettings:
+        m_TargetPlatform: 0
+        m_HasTargetPlatform: 0
+        filter:
+          testMode: 0
+          testNames: []
+          groupNames: []
+          categoryNames: []
+          assemblyNames: []
+        filters:
+        - testMode: 1
+          testNames:
+          - ControlsPanelNavigationTest
+          - ExtraUIFlowTest.AchievementsPanel_MultipleOpenClose
+          - ExtraUIFlowTest.AchievementsPanel_Open_HidesMainMenu
+          - ExtraUIFlowTest.CloseAchievementsPanel_ShowsMainMenu
+          - ExtraUIFlowTest.HelpPanel_ToggleMultipleTimes
+          - ExtraUIFlowTest.MainMenuPanel_IsActive_AtStart
+          - ExtraUIFlowTest.QuitGame_DoesNotCrash_EditorSafe
+          - ExtraUIFlowTest.ToggleHelpPanel_TogglesState
+          - GraphicsToggleTest
+          - PauseSystemTest.CloseControlsPanel_EnablesPausePanel
+          - PauseSystemTest.ControlsPanel_ClosesSuccessfully
+          - PauseSystemTest.ControlsPanel_OpensSuccessfully
+          - PauseSystemTest.OpenControlsPanel_DisablesPausePanel
+          - PauseSystemTest.PausePanel_ToggleCheck_ActiveThenInactive
+          - PauseSystemTest.PausePanel_ToggleCheck_InactiveThenActive
+          - PauseSystemTest.Resume_WhenPaused_HidesPausePanel
+          - SettingsPanelTest.ActivatingSettingsPanel_EnablesPanel
+          - SettingsPanelTest.DeactivatingAllSubpanels
+          - SettingsPanelTest.GraphicsPanel_BoundaryResolutionCheck
+          - SettingsPanelTest.GraphicsPanel_QualityIndex_TooHigh_ShouldBeInvalid
+          - SettingsPanelTest.GraphicsPanel_QualityIndex_TooLow_ShouldBeInvalid
+          - SettingsPanelTest.OpeningAudioPanel_DisablesOtherPanels
+          - SettingsPanelTest.ToggleControlsPanel_OnlyControlsActive
+          - VolumeSliderTest
+          groupNames: []
+          categoryNames: []
+          assemblyNames: []
+        runSynchronously: 0
+        playerHeartbeatTimeout: 600
+        orderedTestNames: []
+        ignoreTests: []
+        featureFlags:
+          fileCleanUpCheck: 0
+          requiresSplashScreen: 0
+          strictDomainReload: 0
+          disableNestedEnumeratorBugfix: 0
+        randomOrderSeed: 0
+      HasFinished: 1
+      Progress: 0.9999997
+      CurrentStepName: Unlock Reload Assemblies
+      CurrentStageName: 
+    m_NewResultList: []
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_TrimLeadingAndTrailingWhitespace: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategories: []
+      availableCategories: []
+    m_SelectedOption: 0
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -386,7 +1478,7 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &13
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -411,6 +1503,10 @@ MonoBehaviour:
     y: 72
     width: 830.5
     height: 439
+    x: 244
+    y: 78.66667
+    width: 790.6666
+    height: 268
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -952,8 +2048,9 @@ MonoBehaviour:
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
     m_Target: {x: 1.2570198, y: 1.1783175, z: 0.17388435}
+    m_Target: {x: 502.36972, y: 153.47803, z: -1.0530459}
     speed: 2
-    m_Value: {x: 0.60365105, y: 0.25832728, z: 0.14968342}
+    m_Value: {x: 502.36972, y: 153.47803, z: -1.0530459}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1004,8 +2101,9 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
     m_Target: 5.5081596
+    m_Target: 128.20056
     speed: 2
-    m_Value: 7.9282613
+    m_Value: 128.20056
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1026,7 +2124,7 @@ MonoBehaviour:
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_Viewpoint:
-    m_SceneView: {fileID: 13}
+    m_SceneView: {fileID: 14}
     m_CameraOverscanSettings:
       m_Opacity: 50
       m_Scale: 1
@@ -1036,7 +2134,7 @@ MonoBehaviour:
   m_LastLockedObject: {fileID: 0}
   m_LastDebugDrawMode: 35
   m_ViewIsLockedToObject: 0
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1061,6 +2159,10 @@ MonoBehaviour:
     y: 72
     width: 830.5
     height: 439
+    x: 245
+    y: 24
+    width: 790.6666
+    height: 268
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1079,6 +2181,7 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
   m_TargetSize: {x: 830.5, y: 418}
+  m_TargetSize: {x: 790.6666, y: 247}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1097,6 +2200,10 @@ MonoBehaviour:
     m_HBaseRangeMax: 207.625
     m_VBaseRangeMin: -104.5
     m_VBaseRangeMax: 104.5
+    m_HBaseRangeMin: -263.55554
+    m_HBaseRangeMax: 263.55554
+    m_VBaseRangeMin: -82.333336
+    m_VBaseRangeMax: 82.333336
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1118,6 +2225,10 @@ MonoBehaviour:
       height: 418
     m_Scale: {x: 2, y: 2}
     m_Translation: {x: 415.25, y: 209}
+      width: 790.6666
+      height: 247
+    m_Scale: {x: 1.5, y: 1.5}
+    m_Translation: {x: 395.3333, y: 123.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1131,13 +2242,20 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 2
   m_LastWindowPixelSize: {x: 1661, y: 878}
+      x: -263.55554
+      y: -82.333336
+      width: 527.1111
+      height: 164.66667
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1186, y: 402}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
   m_showToolbar: 1
---- !u!114 &15
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1162,6 +2280,9 @@ MonoBehaviour:
     y: 72
     width: 254.5
     height: 439
+    y: 24
+    width: 243
+    height: 268
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1179,6 +2300,7 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: baa5feff
+      m_ExpandedIDs: f8d9ffffe8dcffff92dfffffe8e1ffff60e3ffff18e5fffff4e5ffff0cfbffff4ab20000deb20000e6b20000b8b30000feb30000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1203,7 +2325,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1228,6 +2350,9 @@ MonoBehaviour:
     y: 537
     width: 1087
     height: 373
+    y: 318
+    width: 1035.6666
+    height: 253.33331
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1251,6 +2376,7 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
     - Assets/Gentleland/SteampunkUI/Scripts
+    - Assets/tst/TL1/TestsCases/EditTests
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1270,6 +2396,16 @@ MonoBehaviour:
     m_SelectedIDs: 7a490100
     m_LastClickedID: 84346
     m_ExpandedIDs: 00000000dcb80000e6b800000cb9000056490100584901007c49010000ca9a3bffffff7f
+  - Assets/tst/TL1/TestsCases/EditTests
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\debna\OneDrive\Documents\GitHub\legend_of_warriors\legend-of-warriors
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 474.6667}
+    m_SelectedIDs: 00da0000
+    m_LastClickedID: 55808
+    m_ExpandedIDs: 00000000ecb60000eeb60000f0b60000f2b60000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1299,6 +2435,7 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 00000000dcb8000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000ecb60000eeb60000f0b60000f2b60000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1326,7 +2463,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000000000020c80100dc290100ecb50000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1344,7 +2481,7 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1355,8 +2492,8 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 292
---- !u!114 &17
+  m_DirectoriesAreaWidth: 220.66666
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1378,9 +2515,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 537
-    width: 1087
-    height: 373
+    y: 372.6667
+    width: 1035.6666
+    height: 253.33331
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1392,7 +2529,7 @@ MonoBehaviour:
     m_SaveData: []
     m_ContainerData: []
     m_OverlaysVisible: 1
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1413,10 +2550,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1088
-    y: 72
-    width: 381
-    height: 838
+    x: 1036.6667
+    y: 78.66667
+    width: 242.33337
+    height: 547.3333
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1434,7 +2571,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: 60462
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0

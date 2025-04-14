@@ -11,6 +11,7 @@ namespace Gentleland.StemapunkUI.DemoAndExample
         float[] shifts;
         float[] fillTimeInSeconds;
         float[] durations = { 0.75f, 1.0f, 1.2f, 1.5f, 2.0f, 3.0f };
+
         private void Start()
         {
             sliders = FindObjectsOfType<Slider>();
@@ -19,10 +20,14 @@ namespace Gentleland.StemapunkUI.DemoAndExample
             for (int i = 0; i < sliders.Length; i++)
             {
                 float number = durations[Mathf.RoundToInt(Random.Range(0, durations.Length))];
-
                 fillTimeInSeconds[i] = number;
                 shifts[i] = Random.Range(0, fillTimeInSeconds[i]);
             }
+        }
+
+        public void UpdateSlidersManually()
+        {
+            Update();  // Manually call Update() for testing
         }
 
         void Update()

@@ -28,5 +28,10 @@ namespace Gentleland.StemapunkUI.DemoAndExample
             textMesh.text = ""+value;
 
         }
+        // Method to set the TextMeshProUGUI reference
+    public void SetTextMeshProUGUI(TextMeshProUGUI textMesh)
+    {
+        this.textMesh = textMesh;
     }
 }
+    }

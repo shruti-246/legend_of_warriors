@@ -24,28 +24,24 @@ public class MainMenuManager : Menu  // Inherits from a base Menu class
     {
         PlayClickSound();
         mainMenuPanel.SetActive(true);
-        Debug.Log("Main menu opened.");
     }
 
     public override void CloseMenu()
     {
         PlayClickSound();
         mainMenuPanel.SetActive(false);
-        Debug.Log("Main menu closed.");
     }
 
     public virtual void OpenPlay()
     {
         PlayClickSound();
-        Debug.Log("Opening game scene...");
         SceneManager.LoadScene("new-playground");
     }
 
     public virtual void OpenShop()
     {
         PlayClickSound();
-        Debug.Log("Shop opened.");
-        // Can add: SceneManager.LoadScene("Shop", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Shop", LoadSceneMode.Additive);
     }
 
     public virtual void QuitGame()

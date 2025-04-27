@@ -26,22 +26,18 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.B))
         {
-            if (inventoryPanel.activeSelf)
-            {
-                inventoryPanel.SetActive(false); // Close inventory first
-            }
-            else
-            {
-                UnityEngine.SceneManagement.SceneManager.LoadScene("PreviousSceneName");
-            }
+            ToggleInventory();
         }
     }
 
     public void ToggleInventory()
     {
-        inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+        if (inventoryPanel != null)
+        {
+            inventoryPanel.SetActive(!inventoryPanel.activeSelf);
+        }
     }
 
     public void UpdateInventoryUI(Inventory inventory)

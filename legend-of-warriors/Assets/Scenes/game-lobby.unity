@@ -5132,7 +5132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupPanel: {fileID: 1097949460}
   popupText: {fileID: 626222365}
-  duration: 2
+  duration: 1
 --- !u!4 &1077607539
 Transform:
   m_ObjectHideFlags: 0
@@ -5404,8 +5404,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -2114.547, y: -603.665}
+  m_AnchoredPosition: {x: 0.000061035156, y: 29.828003}
+  m_SizeDelta: {x: -2550.1, y: -561.655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1097949462
 MonoBehaviour:

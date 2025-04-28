@@ -27,7 +27,6 @@ public class gameManager : MonoBehaviour {
 
     private void Update()
     {
-        // if the user presses the escape key, quit the game
         if(Input.GetKeyDown(KeyCode.Escape)){
             LoadScene("game-lobby");
         }

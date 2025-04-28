@@ -35,7 +35,7 @@ public class MainMenuManager : Menu  // Inherits from a base Menu class
     public virtual void OpenPlay()
     {
         PlayClickSound();
-        SceneManager.LoadScene("new-playground");
+        SceneManager.LoadScene("difficulty");
     }
 
     public virtual void OpenShop()

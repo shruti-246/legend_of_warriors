@@ -10,6 +10,21 @@ public class PlayerHealth : MonoBehaviour
 
 	public GameObject deathEffect;
 
+	void Start()
+    {
+        switch (GameSettings.CurrentDifficulty)
+        {
+            case GameSettings.Difficulty.BC:
+                health = 999999;
+                break;
+            case GameSettings.Difficulty.Medium:
+                health = 100;
+                break;
+            case GameSettings.Difficulty.Impossible:
+                health = 40;
+                break;
+        }
+    }
 	public void TakeDamage(int damage)
 	{
 		health -= damage;

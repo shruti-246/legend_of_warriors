@@ -8193,7 +8193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayInSeconds: 30
-  nextSceneName: main-game-scene
+  nextSceneName: game-lobby
 --- !u!4 &1397562308
 Transform:
   m_ObjectHideFlags: 0

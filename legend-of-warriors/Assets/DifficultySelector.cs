@@ -6,18 +6,18 @@ public class DifficultySelector : MonoBehaviour
     public void SelectBCMode()
     {
         GameSettings.CurrentDifficulty = GameSettings.Difficulty.BC;
-        SceneManager.LoadScene("new-playground");
+        SceneManager.LoadScene("main-game-scene");
     }
 
     public void SelectMediumMode()
     {
         GameSettings.CurrentDifficulty = GameSettings.Difficulty.Medium;
-        SceneManager.LoadScene("new-playground");
+        SceneManager.LoadScene("main-game-scene");
     }
 
     public void SelectImpossibleMode()
     {
         GameSettings.CurrentDifficulty = GameSettings.Difficulty.Impossible;
-        SceneManager.LoadScene("new-playground");
+        SceneManager.LoadScene("main-game-scene");
     }
 }

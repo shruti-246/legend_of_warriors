@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
                 health = 100;
                 break;
             case GameSettings.Difficulty.Impossible:
-                health = 40;
+                health = 20;
                 break;
         }
     }

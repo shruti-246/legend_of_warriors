@@ -1790,7 +1790,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 10}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &303611899
@@ -3688,8 +3688,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00012207031}
-  m_SizeDelta: {x: -1136.8, y: -307.636}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -128.15, y: -319.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &708509224
 RectTransform:
@@ -4107,7 +4107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 853, y: -324}
+  m_AnchoredPosition: {x: 553, y: -248}
   m_SizeDelta: {x: 304.92, y: 136.232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &798718260
@@ -5404,7 +5404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 29.828003}
+  m_AnchoredPosition: {x: 0, y: 29.828003}
   m_SizeDelta: {x: -2550.1, y: -561.655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1097949462
@@ -6378,8 +6378,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: -57}
-  m_SizeDelta: {x: 1609.831, y: 268.853}
+  m_AnchoredPosition: {x: 0.00015281, y: -44}
+  m_SizeDelta: {x: 1365.894, y: 309.509}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274431453
 MonoBehaviour:
@@ -10172,12 +10172,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 745576701915137028, guid: 5f39633dbc7a5c7409336e0830c8b7b6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -325.858
+      objectReference: {fileID: 0}
+    - target: {fileID: 745576701915137028, guid: 5f39633dbc7a5c7409336e0830c8b7b6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -778.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 745576701915137028, guid: 5f39633dbc7a5c7409336e0830c8b7b6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 745576701915137028, guid: 5f39633dbc7a5c7409336e0830c8b7b6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 121
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 2287775937407576429, guid: 5f39633dbc7a5c7409336e0830c8b7b6, type: 3}
       propertyPath: m_Name
@@ -10192,8 +10200,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 13174948}
     - target: {fileID: 6259078677276089758, guid: 5f39633dbc7a5c7409336e0830c8b7b6, type: 3}
+      propertyPath: m_text
+      value: 'Press A, W, D or arrows to move
+
+        Press Space to shoot
+
+        Press
+        H to exit this panel
+
+        Press Esc to go to menu'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259078677276089758, guid: 5f39633dbc7a5c7409336e0830c8b7b6, type: 3}
       propertyPath: m_margin.w
-      value: 132.96408
+      value: -32.99266
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10211,6 +10230,10 @@ PrefabInstance:
     - target: {fileID: 3290830232439160785, guid: 3eabe64dbbdbd994a9e18a6b1b0d4dcb, type: 3}
       propertyPath: m_Name
       value: HelpIcon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3290830232439160785, guid: 3eabe64dbbdbd994a9e18a6b1b0d4dcb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6098491142235217394, guid: 3eabe64dbbdbd994a9e18a6b1b0d4dcb, type: 3}
       propertyPath: m_Pivot.x

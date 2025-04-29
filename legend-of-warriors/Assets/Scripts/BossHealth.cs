@@ -9,7 +9,7 @@ public class BossHealth : MonoBehaviour
 
 	public GameObject deathEffect;
 
-	public bool isInvulnerable = false;
+	public bool isInvulnerable = true;
 
 	public void TakeDamage(int damage)
 	{
@@ -33,7 +33,7 @@ public class BossHealth : MonoBehaviour
 	{
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Destroy(gameObject);
-		SceneManager.LoadScene("game-lobby");
+		SceneManager.LoadScene("game-win-scene");
 	}
 
 }

@@ -15,13 +15,13 @@ public class PlayerHealth : MonoBehaviour
         switch (GameSettings.CurrentDifficulty)
         {
             case GameSettings.Difficulty.BC:
-                health = 999999;
+                health = 800;
                 break;
             case GameSettings.Difficulty.Medium:
                 health = 100;
                 break;
             case GameSettings.Difficulty.Impossible:
-                health = 20;
+                health = 60;
                 break;
         }
     }

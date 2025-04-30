@@ -38,10 +38,10 @@ public class MainMenuManager : Menu  // Inherits from a base Menu class
         SceneManager.LoadScene("difficulty");
     }
 
-    public virtual void OpenShop()
+    public void OpenShop()
     {
         PlayClickSound();
-        SceneManager.LoadScene("Shop", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Shop", LoadSceneMode.Single);
     }
 
     public virtual void QuitGame()

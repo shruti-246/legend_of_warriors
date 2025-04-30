@@ -40,7 +40,7 @@ public void ApplySelection(string category)
 {
     if (category == "Character")
     {
-        characterSelector.ApplySelectedCharacter(); // ✅ this line!
+        characterSelector.ApplySelectedCharacter();
     }
 
     ExitToShopPanel();

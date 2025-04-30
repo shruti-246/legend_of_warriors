@@ -2,25 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PrefabWeapon : MonoBehaviour
-{
-    public Transform firePoint;
-    public GameObject bulletPrefab;
-    public float fireDelay = 0.5f;
+public class PrefabWeapon : MonoBehaviour {
 
-    private float nextFireTime = 0f;
+	public Transform firePoint;
+	public GameObject bulletPrefab;
+	
+	// Update is called once per frame
+	void Update () {
+		if (Input.GetButtonDown("Fire1"))
+		{
+			Shoot();
+		}
+	}
 
-    void Update()
-    {
-        if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime)
-        {
-            Shoot();
-            nextFireTime = Time.time + fireDelay;
-        }
-    }
-
-    void Shoot()
-    {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-    }
+	public void Shoot ()
+	{
+		Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+	}
 }

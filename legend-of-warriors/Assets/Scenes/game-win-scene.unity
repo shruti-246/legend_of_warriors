@@ -364,8 +364,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 145, y: 114}
-  m_SizeDelta: {x: 628.596, y: 112.639}
+  m_AnchoredPosition: {x: 305, y: 197}
+  m_SizeDelta: {x: 1475.042, y: 207.383}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413824683
 MonoBehaviour:
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yay! You win!
+  m_text: '!!!YOU WIN!!!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -414,8 +414,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -584,11 +584,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6346265025916881657, guid: fa61c16966e7c9349a198e8b03514e48, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 116.36
+      value: 0.000030518
       objectReference: {fileID: 0}
     - target: {fileID: 6346265025916881657, guid: fa61c16966e7c9349a198e8b03514e48, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -56
+      value: -15.925
       objectReference: {fileID: 0}
     - target: {fileID: 6346265025916881657, guid: fa61c16966e7c9349a198e8b03514e48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1136,7 +1136,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116.358, y: -208.168}
+  m_AnchoredPosition: {x: 0.000022888, y: -168}
   m_SizeDelta: {x: 627.015, y: 118.748}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1590741329

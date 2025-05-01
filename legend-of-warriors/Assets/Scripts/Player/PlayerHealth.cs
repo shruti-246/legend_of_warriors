@@ -39,7 +39,7 @@ public class PlayerHealth : MonoBehaviour
 
 	void Die()
 	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		SceneManager.LoadScene("game-win-scene");
 	}
 
 	IEnumerator DamageAnimation()

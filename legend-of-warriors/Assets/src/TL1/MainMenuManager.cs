@@ -7,6 +7,7 @@ public class MainMenuManager : Menu  // Inherits from a base Menu class
     public GameObject settingsPanel;
     public GameObject mainMenuPanel;
     public GameObject achievementsPanel;
+    public GameObject shopPanel;  // Added shop panel reference
 
     public AudioSource audioSource;     // Reference to the audio source
     public AudioClip clickSound;        // The button click sound clip
@@ -41,7 +42,15 @@ public class MainMenuManager : Menu  // Inherits from a base Menu class
     public void OpenShop()
     {
         PlayClickSound();
-        SceneManager.LoadScene("Shop", LoadSceneMode.Single);
+        mainMenuPanel.SetActive(false);
+        shopPanel.SetActive(true);
+    }
+
+    public void CloseShop()
+    {
+        PlayClickSound();
+        shopPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
     }
 
     public virtual void QuitGame()
@@ -96,6 +105,9 @@ public class MainMenuManager : Menu  // Inherits from a base Menu class
 
         if (settingsPanel != null && settingsPanel.activeSelf)
             settingsPanel.SetActive(false);
+
+        if (shopPanel != null && shopPanel.activeSelf)
+            shopPanel.SetActive(false);
 
         mainMenuPanel.SetActive(true);
         Debug.Log("Returned to main menu.");

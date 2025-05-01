@@ -39,7 +39,8 @@ public class PlayerHealth : MonoBehaviour
 
 	void Die()
 	{
-		SceneManager.LoadScene("game-win-scene");
+    	PlayerPrefs.SetString("GameResult", "lose"); // Mark that the player lost
+    	SceneManager.LoadScene("game-win-scene");    // Load the result scene
 	}
 
 	IEnumerator DamageAnimation()

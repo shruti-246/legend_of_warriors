@@ -49,6 +49,7 @@ public class BossHealth : MonoBehaviour
 	void Die()
 	{
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
+		PlayerPrefs.SetString("GameResult", "win");
 		Destroy(gameObject);
 		SceneManager.LoadScene("game-win-scene");
 	}

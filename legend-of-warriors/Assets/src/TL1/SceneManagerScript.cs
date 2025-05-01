@@ -12,7 +12,7 @@ public class SceneManagerScript : MonoBehaviour
     // Load the Shop scene
     public void OpenShop()
     {
-        SceneManager.LoadScene("Shop", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Shop");
     }
 
     // Return to the Main Menu

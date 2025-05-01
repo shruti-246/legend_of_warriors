@@ -204,7 +204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &184409650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,7 +2224,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 831852625}
   bulletPrefab: {fileID: 1539632861300792, guid: 96ae8f9dd8fd89941bc4d858375f035b, type: 3}
-  fireDelay: 0.5
 --- !u!114 &982058077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3449,7 +3448,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1869111874
 RectTransform:
   m_ObjectHideFlags: 0

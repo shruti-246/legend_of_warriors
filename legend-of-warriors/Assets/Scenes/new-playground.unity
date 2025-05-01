@@ -8192,7 +8192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e07d2b3f3a4384a108ba49437c5639e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayInSeconds: 30
+  delayInSeconds: 1
   nextSceneName: game-lobby
 --- !u!4 &1397562308
 Transform:
